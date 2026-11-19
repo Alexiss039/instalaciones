@@ -1,12 +1,11 @@
 # Requisitos - Gestión de mantenimiento de instalaciones (PF-05)
 
-**Equipo:** Brayan Espinoza, Emanuel Ortiz  
+**Equipo:** Brayan Espinosa, Emanuel Ortiz  
 **Cliente:** Juan Carlos Morales Guerra (docente, en representación de la organización)  
 **Método:** cuestionario escrito de 16 preguntas enviado el 11/11/2026 y respondido por el cliente el 18/11/2026.
 
-> **Estado de aprobación:** las respuestas del cliente cubren las 16 preguntas. Falta dejar constancia de la
-> casilla final del cuestionario («Sí, son la base del alcance»). Hasta entonces, las decisiones marcadas
-> como **[Supuesto]** son interpretaciones nuestras y deben confirmarse con el cliente.
+> **Estado de aprobación:** el docente (cliente) aprobó las respuestas de las 16 preguntas, el alcance y los
+> supuestos marcados como **[Supuesto]** (sección 7).
 
 ## 1. Alcance
 
@@ -100,7 +99,7 @@ IoT, contratos, SMS/WhatsApp e integración con plataformas institucionales.
 | Como técnico quiero informar que terminé y como coordinador verificarlo | El cierre guarda resultado y solución; consultable por quien corresponda | CA-05 |
 | Como coordinador quiero ver pendientes, en atención y finalizados por fechas | Los conteos del dashboard coinciden con los reportes almacenados | CA-06 |
 
-## 7. Supuestos pendientes de confirmar con el cliente
+## 7. Supuestos (aprobados por el cliente)
 
 1. Las cuentas de técnicos y coordinación las crea coordinación; los docentes/administrativos pueden auto-registrarse.
 2. Un reporte de prioridad alta o crítica, o con resultado distinto de «resuelto», pasa por verificación de coordinación.
