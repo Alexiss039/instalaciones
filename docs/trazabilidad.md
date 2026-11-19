@@ -1,0 +1,56 @@
+# Matriz de trazabilidad
+
+Relaciona cada criterio de aceptación (CA) con su requisito, la implementación, el pull request y la prueba
+que lo verifica. Las pruebas están en `backend/tests/test_api.py`; su evidencia, en
+[`evidencias/pruebas_api.md`](../evidencias/pruebas_api.md).
+
+> Las columnas **PR** se completan con el número real al abrir cada pull request en GitHub.
+> Las filas de interfaz quedan pendientes hasta construir el frontend.
+
+| CA | Requisito | Implementación (backend) | Interfaz (frontend) | PR | Pruebas |
+|---|---|---|---|---|---|
+| **CA-01** Registrar y consultar una falla vinculada a un espacio | RF-02, RF-03, RF-04, RF-05 | `POST /reportes`, `GET /reportes`, `GET /reportes/{id}`, `POST /reportes/{id}/fotos`, `GET /espacios` · `routers/reportes.py`, `routers/espacios.py` | Pendiente | _PR backend_ | PF-01, PF-02, PF-03, PF-04, PF-17, PF-18, PF-19 |
+| **CA-02** Evaluar y gestionar; la decisión queda registrada y visible | RF-06, RF-07, RF-08 | `POST /reportes/{id}/evaluacion`, `POST /reportes/{id}/valoraciones`, `GET /reportes/{id}/historial` · `servicios.py` (transiciones) | Pendiente | _PR backend_ | PF-05, PF-06, PF-08, PF-13 |
+| **CA-03** Asignar responsable; persiste y es visible | RF-09 | `POST /reportes/{id}/asignaciones`, `GET /tecnicos` · `routers/reportes.py`, `routers/usuarios.py` | Pendiente | _PR backend_ | PF-07, PF-08, PF-16, PF-17 |
+| **CA-04** Registrar intervenciones con historial | RF-10 | `POST /reportes/{id}/intervenciones`, `GET /reportes/{id}/intervenciones` | Pendiente | _PR backend_ | PF-09, PF-12 |
+| **CA-05** Cerrar el servicio y conservar el resultado | RF-11, RF-08 | `POST /reportes/{id}/finalizar`, `POST /reportes/{id}/verificacion` | Pendiente | _PR backend_ | PF-10, PF-12, PF-15 |
+| **CA-06** Consolidado agrupado y filtrado | RF-12 | `GET /consolidado/resumen`, filtros de `GET /reportes` · `routers/consolidado.py` | Pendiente | _PR backend_ | PF-11, PF-12 |
+
+## Requisitos transversales
+
+| Requisito | Dónde se implementa | Pruebas |
+|---|---|---|
+| RF-01 Cuentas y autenticación | `routers/auth.py`, `routers/usuarios.py`, `seguridad.py` | PF-14, PF-16 |
+| RNF-01 Control de acceso por perfil | `dependencias.requiere_roles`, `servicios.puede_ver` | PF-08, PF-17 |
+| RNF-02 Validación y errores controlados | `schemas.py`, `errores.py` | PF-02, PF-04, PF-18 |
+| RNF-03 Seguridad de credenciales | `seguridad.py`, `.env.example`, `.gitignore` | PF-14 |
+| RNF-04 Instalación reproducible | `README.md`, `backend/requirements.txt`, `app/seed.py` | Verificado siguiendo el README |
+| RNF-05 Documentación de la API | OpenAPI en `/docs` | - |
+| RNF-06 Historial y auditoría | tabla `historial_estados`, asignaciones conservadas | PF-10, PF-16 |
+
+## Pruebas funcionales
+
+| ID | Prueba | Requisito | CA | HTTP esperado |
+|---|---|---|---|---|
+| PF-01 | Registrar reporte válido y comprobar que persiste | RF-03, RF-05 | CA-01 | 201, 200 |
+| PF-02 | Rechazar datos obligatorios faltantes o inválidos | RF-03, RNF-02 | CA-01 | 422 |
+| PF-03 | Listar reportes y consultar un detalle | RF-05 | CA-01 | 200 |
+| PF-04 | Reporte inexistente | RNF-02 | CA-01 | 404 |
+| PF-05 | Evaluar: aceptar con prioridad / rechazar con motivo | RF-06 | CA-02 | 200, 422 |
+| PF-06 | Transición de estado no permitida | RF-08 | CA-02 | 409 |
+| PF-07 | Asignar responsable; persistencia y visibilidad | RF-09, RF-05 | CA-03 | 201, 200 |
+| PF-08 | Usuario no autorizado bloqueado sin cambios | RNF-01 | CA-02, CA-03 | 401, 403 |
+| PF-09 | Registrar intervención válida e inválidas | RF-10 | CA-04 | 201, 403, 422 |
+| PF-10 | Cerrar reporte y consultar resultado con historial | RF-11, RF-08 | CA-05 | 200, 409 |
+| PF-11 | Consolidado con conteos y filtros | RF-12 | CA-06 | 200, 422 |
+| PF-12 | Flujo completo reporte → cierre (API) | RF-03 a RF-12 | CA-01 a CA-06 | 2xx |
+| PF-13 | Duplicados y conservación de reportantes | RF-07 | CA-02 | 200, 422 |
+| PF-14 | Registro, login y credenciales inválidas | RF-01, RNF-03 | CA-01 | 201, 401, 409, 422 |
+| PF-15 | Verificación de cierre y resultados no resueltos | RF-11 | CA-05 | 200, 403, 422 |
+| PF-16 | Reasignación, motivo y disponibilidad | RF-09 | CA-03 | 201, 409, 422 |
+| PF-17 | Visibilidad por perfil | RF-05, RNF-01 | CA-01, CA-03 | 200, 403 |
+| PF-18 | Fotografías: formatos y contenido | RF-04, RNF-02 | CA-01 | 201, 403, 422 |
+| PF-19 | Catálogo de espacios | RF-02 | CA-01 | 201, 403, 404, 409, 422 |
+
+> PF-12 se ejecuta aquí a nivel de API; la guía pide demostrar además el flujo interfaz → API → base de datos,
+> que se cubrirá con el frontend.
