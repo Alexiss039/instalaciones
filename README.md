@@ -16,14 +16,14 @@ y base de datos relacional.
 | **Curso** | Aplicaciones y Servicios Web - Tecnología en Desarrollo de Software |
 | **Docente / cliente** | Juan Carlos Morales Guerra |
 | **Fecha** | Noviembre de 2026 |
-| **Repositorio** | _Pendiente: agregar el enlace de GitHub_ |
+| **Repositorio** | [https://github.com/Alexiss039/instalaciones](https://github.com/Alexiss039/instalaciones) |
 
 **Integrantes y aportes**
 
 | Integrante | Aporte |
 |---|---|
-| Brayan Espinoza | Backend: modelo de datos, API REST, reglas de negocio, pruebas y documentación técnica |
-| Emanuel Ortiz | Frontend: interfaces por perfil e integración con la API |
+| Brayan Espinosa | Backend: modelo de datos, API REST, reglas de negocio, pruebas de API, evidencias y documentación técnica (commits con `alexisbrayan0444@gmail.com`) |
+| Emanuel Ortiz | Frontend: interfaces por perfil, validaciones en el navegador e integración con la API (commits con `emanuel-2005@outlook.es`) |
 
 ## 2. Descripción del sistema
 
@@ -215,15 +215,17 @@ intervención → finalización → verificación → cierre → dashboard, pasa
 
 ## 8. Control de versiones
 
-- **Repositorio:** _pendiente de agregar_.
+- **Repositorio:** [https://github.com/Alexiss039/instalaciones](https://github.com/Alexiss039/instalaciones).
 - **Flujo:** rama `main` protegida por pull requests; ramas `feature/...` por funcionalidad; commits
   descriptivos.
-- **Backend:** commits y PR de Brayan Espinoza. **Frontend:** commits y PR de Emanuel Ortiz, revisados de
+- **Backend:** commits y PR de Brayan Espinosa. **Frontend:** commits y PR de Emanuel Ortiz, revisados de
   forma cruzada.
 
 | PR | Contenido | Autor | Revisor |
 |---|---|---|---|
-| _por completar_ | | | |
+| [#1](https://github.com/Alexiss039/instalaciones/pull/1) | Backend: API, modelo de datos, pruebas, evidencias y documentación | Brayan Espinosa | Emanuel Ortiz |
+| [#2](https://github.com/Alexiss039/instalaciones/pull/2) | Frontend: interfaz web por perfil | Emanuel Ortiz | Brayan Espinosa |
+| [#3](https://github.com/Alexiss039/instalaciones/pull/3) | Backend: servicio y criterio «dashboard», usuarios de demostración simples, evidencias y capturas | Brayan Espinosa | Emanuel Ortiz |
 
 ## 9. Conclusiones y limitaciones
 
@@ -234,4 +236,4 @@ intervención → finalización → verificación → cierre → dashboard, pasa
   no tiene pruebas automatizadas, solo el guion documentado.
 - **Evidencias de la interfaz:** 8 capturas del flujo completo en `evidencias/capturas/` (guion en
   `evidencias/flujo_interfaz.md`).
-- **Pendiente:** enlaces de GitHub y confirmación de los supuestos de `docs/requisitos.md` con el cliente.
+- **Aprobación:** el docente (cliente) aprobó el alcance, los requisitos y los supuestos de `docs/requisitos.md`.

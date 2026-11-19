@@ -31,6 +31,8 @@ Capas del backend (`backend/app/`):
 
 ## 2. Modelo de datos
 
+![Modelo de datos](diagramas/modelo_datos.svg)
+
 ```
 usuarios ─┬─< reportes >── espacios >── edificios
           │      │
@@ -58,6 +60,8 @@ Los **reportantes de un caso** no tienen tabla propia: son el creador del report
 de los reportes que lo tienen en `duplicado_de_id`.
 
 ## 3. Estados y transiciones
+
+![Estados y transiciones](diagramas/estados.svg)
 
 ```
               ┌──► rechazado
