@@ -43,7 +43,7 @@ IoT, contratos, SMS/WhatsApp e integración con plataformas institucionales.
 | 13 | Para terminar se necesita el trabajo realizado y el resultado; algunos casos requieren verificación de coordinación | Cierre exige ≥ 1 intervención, descripción de la solución y resultado; verificación según prioridad o resultado **[Supuesto]** |
 | 14 | El responsable informa cuando termina y coordinación puede verificar; algunas fallas requieren apoyo externo o no se solucionan de inmediato | Resultados: resuelto, no reproducible, requiere tercero, no solucionable (con motivo) |
 | 15 | El reportante ve lo suyo, el técnico lo asignado, coordinación todo; cada persona con su cuenta | Autenticación con JWT y permisos por perfil; las cuentas de técnicos y coordinación las crea coordinación **[Supuesto]**; los reportantes pueden auto-registrarse **[Supuesto]** |
-| 16 | Pendientes, en atención y finalizados; fallas frecuentes, espacios afectados, responsables; por fechas | Servicio de consolidado con filtro `desde`/`hasta` |
+| 16 | Pendientes, en atención y finalizados; fallas frecuentes, espacios afectados, responsables; por fechas | Servicio del dashboard con filtro `desde`/`hasta` |
 
 ## 3. Requisitos funcionales (RF)
 
@@ -60,7 +60,7 @@ IoT, contratos, SMS/WhatsApp e integración con plataformas institucionales.
 | RF-09 | Coordinación asigna un responsable y personal de apoyo, y puede reasignar (con motivo); ve experiencia, disponibilidad y carga de cada técnico | Alta |
 | RF-10 | El técnico asignado registra intervenciones: fecha, actividades, tiempo empleado y resultado; cada una queda a su nombre | Alta |
 | RF-11 | El responsable finaliza el reporte con resultado y descripción de la solución; coordinación verifica cuando corresponde o cierra directamente. Los casos no resueltos guardan el motivo | Alta |
-| RF-12 | Coordinación consulta el consolidado: reportes por grupo y estado, fallas más frecuentes, espacios afectados, responsables y resultados, filtrado por fechas | Alta |
+| RF-12 | Coordinación consulta el dashboard (la «información consolidada» de la guía): reportes por grupo y estado, fallas más frecuentes, espacios afectados, responsables y resultados, filtrado por fechas | Alta |
 
 ## 4. Requisitos no funcionales (RNF)
 
@@ -98,7 +98,7 @@ IoT, contratos, SMS/WhatsApp e integración con plataformas institucionales.
 | Como coordinador quiero asignar responsables según su perfil | La asignación persiste y es visible para coordinación y para el técnico asignado | CA-03 |
 | Como técnico quiero registrar lo que hice en cada visita | La intervención queda ligada al reporte y a su autor, con historial | CA-04 |
 | Como técnico quiero informar que terminé y como coordinador verificarlo | El cierre guarda resultado y solución; consultable por quien corresponda | CA-05 |
-| Como coordinador quiero ver pendientes, en atención y finalizados por fechas | Los conteos del consolidado coinciden con los reportes almacenados | CA-06 |
+| Como coordinador quiero ver pendientes, en atención y finalizados por fechas | Los conteos del dashboard coinciden con los reportes almacenados | CA-06 |
 
 ## 7. Supuestos pendientes de confirmar con el cliente
 

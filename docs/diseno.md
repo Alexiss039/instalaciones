@@ -22,7 +22,7 @@ Capas del backend (`backend/app/`):
 
 | Módulo | Responsabilidad |
 |---|---|
-| `routers/` | Endpoints HTTP agrupados por recurso (auth, usuarios, espacios, reportes, consolidado) |
+| `routers/` | Endpoints HTTP agrupados por recurso (auth, usuarios, espacios, reportes, dashboard) |
 | `schemas.py` | Validación de entrada y forma de las respuestas |
 | `servicios.py` | Reglas de negocio compartidas: transiciones, visibilidad por perfil, filtros de fecha |
 | `models.py` | Tablas |
@@ -68,7 +68,7 @@ de los reportes que lo tienen en `duplicado_de_id`.
                                                 └──────────────── (no aprobado) ──┘
 ```
 
-| Estado | Grupo del consolidado |
+| Estado | Grupo del dashboard |
 |---|---|
 | reportado, evaluado, asignado | **Pendiente** |
 | en_atencion, en_verificacion | **En atención** |
@@ -90,7 +90,7 @@ Cualquier transición distinta de las del diagrama responde **HTTP 409**. Result
 | Responder valoración técnica | | ✔ (la dirigida a él) | |
 | Registrar intervención | | ✔ (asignado) | |
 | Finalizar reporte | | ✔ (responsable) | ✔ (cierre directo) |
-| Consolidado | | | ✔ |
+| Dashboard | | | ✔ |
 
 Sin token: HTTP 401. Con token pero sin permiso: HTTP 403.
 
@@ -115,6 +115,37 @@ Pantallas previstas, una por actor y flujo:
 | Todos | Inicio de sesión / registro |
 | Reportante | Mis reportes (lista y detalle con historial), Nuevo reporte (con fotos) |
 | Mantenimiento | Mis trabajos asignados, Detalle con registro de intervención y finalización, Valoraciones pendientes |
-| Coordinación | Bandeja de reportes con filtros, Evaluar, Asignar, Verificar cierres, Espacios y usuarios, Consolidado |
+| Coordinación | Bandeja de reportes con filtros, Evaluar, Asignar, Verificar cierres, Espacios y usuarios, Dashboard |
 
-> Los prototipos y capturas se agregan cuando el frontend esté implementado.
+**Implementación:** aplicación de una sola página con HTML, CSS y JavaScript sin dependencias ni paso de
+compilación (módulos ES nativos), servida por FastAPI en `/`. Navegación por hash (`#/reportes`, `#/reportes/5`,
+`#/dashboard`...); el token JWT vive en `sessionStorage`. Todo el texto dinámico se inserta como texto (no como
+HTML) para evitar inyecciones; los errores de la API se muestran junto al formulario. Es responsive (probado a
+375 px sin desplazamiento horizontal) y usa siempre un tema claro (no hay modo oscuro, tampoco según el sistema).
+
+**Lenguaje visual.** Se definió combinando tres criterios de diseño: auditar y mejorar lo existente sin romper
+funciones, un estilo de «agencia premium» y una portada de acceso cinematográfica.
+
+| Elemento | Decisión |
+|---|---|
+| Navegación | Isla flotante de vidrio con el menú del perfil; en móvil, hamburguesa que se transforma en «X» y abre un menú a pantalla completa |
+| Tarjetas | Doble bisel: una bandeja exterior translúcida y un núcleo interior con luz propia (sin bordes grises de 1 px ni sombras duras) |
+| Botones | Píldora con la flecha en su propio círculo; la acción secundaria es un botón tonal, sin flecha |
+| Tipografía | Outfit para títulos y Geist para texto y datos (cifras tabulares); si no hay internet se usan las fuentes del sistema |
+| Color | Un solo acento (verde petróleo) sobre fondos gris-verdoso; los estados y las prioridades usan tonos propios |
+| Fondo | Gris-verdoso claro con luces pastel muy suaves (azul, lila, menta y durazno), el mismo en todas las pantallas |
+| Acceso | Pantalla dividida: héroe claro con aurora pastel animada y titular grande, y la tarjeta del formulario |
+| Dashboard | Bento sin huecos de 12 columnas (3+3+3+3, 5+4+3 y 7+5) |
+| Movimiento | Entrada suave con desenfoque al hacer scroll, barras que crecen y curvas de aceleración propias; solo `transform` y `opacity`, y se desactiva con «reducir movimiento» |
+| Dependencias | Ninguna: no usa librerías de animación ni de iconos (el logo es un SVG propio) |
+
+```
+frontend/
+├── index.html
+├── css/estilos.css
+└── js/
+    ├── app.js          # enrutador y marco con menú por perfil
+    ├── api.js          # cliente de la API, sesión y traducción de errores
+    ├── util.js         # elementos DOM, etiquetas, fechas, avisos, modales y formularios
+    └── vistas/         # auth, lista, nuevo, detalle, dashboard, espacios, usuarios
+```

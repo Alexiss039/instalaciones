@@ -22,13 +22,13 @@ EDIFICIOS = {
 }
 
 USUARIOS = [
-    ("Coordinadora Demo", "coordinacion@demo.test", "3000000001", Rol.COORDINACION, None, [], 0),
-    ("Técnico Eléctrico Demo", "tecnico.electrico@demo.test", "3000000002", Rol.MANTENIMIENTO, None,
+    ("Coordinadora", "coordinacion@gmail.com", "3000000001", Rol.COORDINACION, None, [], 0),
+    ("Técnico Eléctrico", "tecnico.electrico@gmail.com", "3000000002", Rol.MANTENIMIENTO, None,
      [TipoFalla.ELECTRICA, TipoFalla.ILUMINACION, TipoFalla.RED_DATOS], 8),
-    ("Técnico General Demo", "tecnico.general@demo.test", "3000000003", Rol.MANTENIMIENTO, None,
+    ("Técnico General", "tecnico.general@gmail.com", "3000000003", Rol.MANTENIMIENTO, None,
      [TipoFalla.PLOMERIA, TipoFalla.MOBILIARIO, TipoFalla.ESTRUCTURA, TipoFalla.CLIMATIZACION], 3),
-    ("Docente Demo", "docente@demo.test", "3000000004", Rol.REPORTANTE, Cargo.DOCENTE, [], 0),
-    ("Administrativo Demo", "administrativo@demo.test", "3000000005", Rol.REPORTANTE,
+    ("Docente", "docente@gmail.com", "3000000004", Rol.REPORTANTE, Cargo.DOCENTE, [], 0),
+    ("Administrativo", "administrativo@gmail.com", "3000000005", Rol.REPORTANTE,
      Cargo.ADMINISTRATIVO, [], 0),
 ]
 

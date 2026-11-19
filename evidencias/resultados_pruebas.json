@@ -38,7 +38,7 @@
           "estado": "reportado",
           "prioridad": null,
           "duplicado_de_id": null,
-          "creado_en": "2026-11-19T14:35:33.219697",
+          "creado_en": "2026-11-19T22:00:36.179083",
           "creador": {
             "id": 4,
             "nombre": "Docente Prueba",
@@ -66,7 +66,7 @@
                 "nombre": "Docente Prueba"
               },
               "comentario": "Reporte registrado",
-              "fecha": "2026-11-19T14:35:33.220915"
+              "fecha": "2026-11-19T22:00:36.180167"
             }
           ],
           "valoraciones": [],
@@ -102,7 +102,7 @@
           "estado": "reportado",
           "prioridad": null,
           "duplicado_de_id": null,
-          "creado_en": "2026-11-19T14:35:33.219697",
+          "creado_en": "2026-11-19T22:00:36.179083",
           "creador": {
             "id": 4,
             "nombre": "Docente Prueba",
@@ -130,7 +130,7 @@
                 "nombre": "Docente Prueba"
               },
               "comentario": "Reporte registrado",
-              "fecha": "2026-11-19T14:35:33.220915"
+              "fecha": "2026-11-19T22:00:36.180167"
             }
           ],
           "valoraciones": [],
@@ -140,6 +140,8 @@
         }
       }
     ],
+    "previo": "BD vacía de reportes con edificio «Bloque A», 3 espacios y una cuenta por perfil (coordinación, 2 técnicos, docente, administrativo), todas con sesión iniciada.",
+    "esperado": "HTTP 201 con estado «reportado»; el reporte se puede consultar después con los mismos datos.",
     "nodo": "test_pf01_crear_reporte_valido",
     "resultado": "APROBADA"
   },
@@ -285,6 +287,8 @@
         "respuesta": []
       }
     ],
+    "previo": "BD vacía de reportes con edificio «Bloque A», 3 espacios y una cuenta por perfil (coordinación, 2 técnicos, docente, administrativo), todas con sesión iniciada.",
+    "esperado": "HTTP 422 con el detalle de cada campo inválido; no se crea ningún reporte.",
     "nodo": "test_pf02_reporte_invalido",
     "resultado": "APROBADA"
   },
@@ -326,7 +330,7 @@
           "estado": "reportado",
           "prioridad": null,
           "duplicado_de_id": null,
-          "creado_en": "2026-11-19T14:35:33.499949",
+          "creado_en": "2026-11-19T22:00:36.453019",
           "creador": {
             "id": 4,
             "nombre": "Docente Prueba",
@@ -354,7 +358,7 @@
                 "nombre": "Docente Prueba"
               },
               "comentario": "Reporte registrado",
-              "fecha": "2026-11-19T14:35:33.500935"
+              "fecha": "2026-11-19T22:00:36.453820"
             }
           ],
           "valoraciones": [],
@@ -395,7 +399,7 @@
           "estado": "reportado",
           "prioridad": null,
           "duplicado_de_id": null,
-          "creado_en": "2026-11-19T14:35:33.526126",
+          "creado_en": "2026-11-19T22:00:36.478649",
           "creador": {
             "id": 4,
             "nombre": "Docente Prueba",
@@ -423,7 +427,7 @@
                 "nombre": "Docente Prueba"
               },
               "comentario": "Reporte registrado",
-              "fecha": "2026-11-19T14:35:33.526585"
+              "fecha": "2026-11-19T22:00:36.479078"
             }
           ],
           "valoraciones": [],
@@ -464,7 +468,7 @@
           "estado": "reportado",
           "prioridad": null,
           "duplicado_de_id": null,
-          "creado_en": "2026-11-19T14:35:33.539496",
+          "creado_en": "2026-11-19T22:00:36.491338",
           "creador": {
             "id": 4,
             "nombre": "Docente Prueba",
@@ -492,7 +496,7 @@
                 "nombre": "Docente Prueba"
               },
               "comentario": "Reporte registrado",
-              "fecha": "2026-11-19T14:35:33.539952"
+              "fecha": "2026-11-19T22:00:36.491792"
             }
           ],
           "valoraciones": [],
@@ -529,7 +533,7 @@
             "estado": "reportado",
             "prioridad": null,
             "duplicado_de_id": null,
-            "creado_en": "2026-11-19T14:35:33.539496",
+            "creado_en": "2026-11-19T22:00:36.491338",
             "creador": {
               "id": 4,
               "nombre": "Docente Prueba"
@@ -556,7 +560,7 @@
             "estado": "reportado",
             "prioridad": null,
             "duplicado_de_id": null,
-            "creado_en": "2026-11-19T14:35:33.526126",
+            "creado_en": "2026-11-19T22:00:36.478649",
             "creador": {
               "id": 4,
               "nombre": "Docente Prueba"
@@ -583,7 +587,7 @@
             "estado": "reportado",
             "prioridad": null,
             "duplicado_de_id": null,
-            "creado_en": "2026-11-19T14:35:33.499949",
+            "creado_en": "2026-11-19T22:00:36.453019",
             "creador": {
               "id": 4,
               "nombre": "Docente Prueba"
@@ -619,7 +623,7 @@
           "estado": "reportado",
           "prioridad": null,
           "duplicado_de_id": null,
-          "creado_en": "2026-11-19T14:35:33.499949",
+          "creado_en": "2026-11-19T22:00:36.453019",
           "creador": {
             "id": 4,
             "nombre": "Docente Prueba",
@@ -647,7 +651,7 @@
                 "nombre": "Docente Prueba"
               },
               "comentario": "Reporte registrado",
-              "fecha": "2026-11-19T14:35:33.500935"
+              "fecha": "2026-11-19T22:00:36.453820"
             }
           ],
           "valoraciones": [],
@@ -661,7 +665,7 @@
                 "cargo": "docente"
               },
               "reporte_id": 1,
-              "fecha_reporte": "2026-11-19T14:35:33.499949",
+              "fecha_reporte": "2026-11-19T22:00:36.453019",
               "es_reporte_original": true
             }
           ],
@@ -670,6 +674,8 @@
         }
       }
     ],
+    "previo": "BD vacía de reportes con edificio «Bloque A», 3 espacios y una cuenta por perfil (coordinación, 2 técnicos, docente, administrativo), todas con sesión iniciada + 3 reportes creados por el docente.",
+    "esperado": "Coordinación recibe HTTP 200 con los 3 reportes del más reciente al más antiguo; el detalle trae edificio, espacio y teléfono del reportante.",
     "nodo": "test_pf03_listar_y_detallar",
     "resultado": "APROBADA"
   },
@@ -692,6 +698,8 @@
         }
       }
     ],
+    "previo": "BD vacía de reportes con edificio «Bloque A», 3 espacios y una cuenta por perfil (coordinación, 2 técnicos, docente, administrativo), todas con sesión iniciada.",
+    "esperado": "HTTP 404 con mensaje y código de error controlados, sin excepción del servidor.",
     "nodo": "test_pf04_reporte_inexistente",
     "resultado": "APROBADA"
   },
@@ -733,7 +741,7 @@
           "estado": "reportado",
           "prioridad": null,
           "duplicado_de_id": null,
-          "creado_en": "2026-11-19T14:35:33.775711",
+          "creado_en": "2026-11-19T22:00:36.698627",
           "creador": {
             "id": 4,
             "nombre": "Docente Prueba",
@@ -761,7 +769,7 @@
                 "nombre": "Docente Prueba"
               },
               "comentario": "Reporte registrado",
-              "fecha": "2026-11-19T14:35:33.776661"
+              "fecha": "2026-11-19T22:00:36.699429"
             }
           ],
           "valoraciones": [],
@@ -802,7 +810,7 @@
           "estado": "reportado",
           "prioridad": null,
           "duplicado_de_id": null,
-          "creado_en": "2026-11-19T14:35:33.803843",
+          "creado_en": "2026-11-19T22:00:36.723271",
           "creador": {
             "id": 4,
             "nombre": "Docente Prueba",
@@ -830,7 +838,7 @@
                 "nombre": "Docente Prueba"
               },
               "comentario": "Reporte registrado",
-              "fecha": "2026-11-19T14:35:33.804358"
+              "fecha": "2026-11-19T22:00:36.723928"
             }
           ],
           "valoraciones": [],
@@ -869,7 +877,7 @@
           "estado": "evaluado",
           "prioridad": "alta",
           "duplicado_de_id": null,
-          "creado_en": "2026-11-19T14:35:33.775711",
+          "creado_en": "2026-11-19T22:00:36.698627",
           "creador": {
             "id": 4,
             "nombre": "Docente Prueba",
@@ -897,7 +905,7 @@
                 "nombre": "Docente Prueba"
               },
               "comentario": "Reporte registrado",
-              "fecha": "2026-11-19T14:35:33.776661"
+              "fecha": "2026-11-19T22:00:36.699429"
             },
             {
               "id": 3,
@@ -908,7 +916,7 @@
                 "nombre": "Coordinación Prueba"
               },
               "comentario": "Aceptado con prioridad alta",
-              "fecha": "2026-11-19T14:35:33.825194"
+              "fecha": "2026-11-19T22:00:36.743326"
             }
           ],
           "valoraciones": [],
@@ -922,7 +930,7 @@
                 "cargo": "docente"
               },
               "reporte_id": 1,
-              "fecha_reporte": "2026-11-19T14:35:33.775711",
+              "fecha_reporte": "2026-11-19T22:00:36.698627",
               "es_reporte_original": true
             }
           ],
@@ -980,7 +988,7 @@
           "estado": "rechazado",
           "prioridad": null,
           "duplicado_de_id": null,
-          "creado_en": "2026-11-19T14:35:33.803843",
+          "creado_en": "2026-11-19T22:00:36.723271",
           "creador": {
             "id": 4,
             "nombre": "Docente Prueba",
@@ -1008,7 +1016,7 @@
                 "nombre": "Docente Prueba"
               },
               "comentario": "Reporte registrado",
-              "fecha": "2026-11-19T14:35:33.804358"
+              "fecha": "2026-11-19T22:00:36.723928"
             },
             {
               "id": 4,
@@ -1019,7 +1027,7 @@
                 "nombre": "Coordinación Prueba"
               },
               "comentario": "No corresponde a las instalaciones",
-              "fecha": "2026-11-19T14:35:33.854972"
+              "fecha": "2026-11-19T22:00:36.768830"
             }
           ],
           "valoraciones": [],
@@ -1033,7 +1041,7 @@
                 "cargo": "docente"
               },
               "reporte_id": 2,
-              "fecha_reporte": "2026-11-19T14:35:33.803843",
+              "fecha_reporte": "2026-11-19T22:00:36.723271",
               "es_reporte_original": true
             }
           ],
@@ -1073,7 +1081,7 @@
           "estado": "reportado",
           "prioridad": null,
           "duplicado_de_id": null,
-          "creado_en": "2026-11-19T14:35:33.869876",
+          "creado_en": "2026-11-19T22:00:36.780948",
           "creador": {
             "id": 4,
             "nombre": "Docente Prueba",
@@ -1101,7 +1109,7 @@
                 "nombre": "Docente Prueba"
               },
               "comentario": "Reporte registrado",
-              "fecha": "2026-11-19T14:35:33.870369"
+              "fecha": "2026-11-19T22:00:36.781365"
             }
           ],
           "valoraciones": [],
@@ -1131,6 +1139,8 @@
         }
       }
     ],
+    "previo": "BD vacía de reportes con edificio «Bloque A», 3 espacios y una cuenta por perfil (coordinación, 2 técnicos, docente, administrativo), todas con sesión iniciada + reportes en estado «reportado».",
+    "esperado": "Aceptar: estado «evaluado» con prioridad. Rechazar con motivo: estado «rechazado». Ambas decisiones quedan en el historial.",
     "nodo": "test_pf05_evaluar_reporte",
     "resultado": "APROBADA"
   },
@@ -1172,7 +1182,7 @@
           "estado": "reportado",
           "prioridad": null,
           "duplicado_de_id": null,
-          "creado_en": "2026-11-19T14:35:33.999822",
+          "creado_en": "2026-11-19T22:00:36.887233",
           "creador": {
             "id": 4,
             "nombre": "Docente Prueba",
@@ -1200,7 +1210,7 @@
                 "nombre": "Docente Prueba"
               },
               "comentario": "Reporte registrado",
-              "fecha": "2026-11-19T14:35:34.000925"
+              "fecha": "2026-11-19T22:00:36.888031"
             }
           ],
           "valoraciones": [],
@@ -1268,7 +1278,7 @@
           "estado": "evaluado",
           "prioridad": "media",
           "duplicado_de_id": null,
-          "creado_en": "2026-11-19T14:35:33.999822",
+          "creado_en": "2026-11-19T22:00:36.887233",
           "creador": {
             "id": 4,
             "nombre": "Docente Prueba",
@@ -1296,7 +1306,7 @@
                 "nombre": "Docente Prueba"
               },
               "comentario": "Reporte registrado",
-              "fecha": "2026-11-19T14:35:34.000925"
+              "fecha": "2026-11-19T22:00:36.888031"
             },
             {
               "id": 2,
@@ -1307,7 +1317,7 @@
                 "nombre": "Coordinación Prueba"
               },
               "comentario": "Aceptado con prioridad media",
-              "fecha": "2026-11-19T14:35:34.061846"
+              "fecha": "2026-11-19T22:00:36.937831"
             }
           ],
           "valoraciones": [],
@@ -1321,7 +1331,7 @@
                 "cargo": "docente"
               },
               "reporte_id": 1,
-              "fecha_reporte": "2026-11-19T14:35:33.999822",
+              "fecha_reporte": "2026-11-19T22:00:36.887233",
               "es_reporte_original": true
             }
           ],
@@ -1371,7 +1381,7 @@
           "estado": "evaluado",
           "prioridad": "media",
           "duplicado_de_id": null,
-          "creado_en": "2026-11-19T14:35:33.999822",
+          "creado_en": "2026-11-19T22:00:36.887233",
           "creador": {
             "id": 4,
             "nombre": "Docente Prueba",
@@ -1399,7 +1409,7 @@
                 "nombre": "Docente Prueba"
               },
               "comentario": "Reporte registrado",
-              "fecha": "2026-11-19T14:35:34.000925"
+              "fecha": "2026-11-19T22:00:36.888031"
             },
             {
               "id": 2,
@@ -1410,7 +1420,7 @@
                 "nombre": "Coordinación Prueba"
               },
               "comentario": "Aceptado con prioridad media",
-              "fecha": "2026-11-19T14:35:34.061846"
+              "fecha": "2026-11-19T22:00:36.937831"
             }
           ],
           "valoraciones": [],
@@ -1424,7 +1434,7 @@
                 "cargo": "docente"
               },
               "reporte_id": 1,
-              "fecha_reporte": "2026-11-19T14:35:33.999822",
+              "fecha_reporte": "2026-11-19T22:00:36.887233",
               "es_reporte_original": true
             }
           ],
@@ -1433,6 +1443,8 @@
         }
       }
     ],
+    "previo": "BD vacía de reportes con edificio «Bloque A», 3 espacios y una cuenta por perfil (coordinación, 2 técnicos, docente, administrativo), todas con sesión iniciada + reporte recién creado (estado «reportado»).",
+    "esperado": "Asignar o finalizar antes de evaluar da HTTP 409; rechazar un reporte ya evaluado da HTTP 409 y el estado se mantiene «evaluado».",
     "nodo": "test_pf06_transicion_no_permitida",
     "resultado": "APROBADA"
   },
@@ -1474,7 +1486,7 @@
           "estado": "reportado",
           "prioridad": null,
           "duplicado_de_id": null,
-          "creado_en": "2026-11-19T14:35:34.199020",
+          "creado_en": "2026-11-19T22:00:37.053868",
           "creador": {
             "id": 4,
             "nombre": "Docente Prueba",
@@ -1502,7 +1514,7 @@
                 "nombre": "Docente Prueba"
               },
               "comentario": "Reporte registrado",
-              "fecha": "2026-11-19T14:35:34.200605"
+              "fecha": "2026-11-19T22:00:37.054688"
             }
           ],
           "valoraciones": [],
@@ -1541,7 +1553,7 @@
           "estado": "evaluado",
           "prioridad": "media",
           "duplicado_de_id": null,
-          "creado_en": "2026-11-19T14:35:34.199020",
+          "creado_en": "2026-11-19T22:00:37.053868",
           "creador": {
             "id": 4,
             "nombre": "Docente Prueba",
@@ -1569,7 +1581,7 @@
                 "nombre": "Docente Prueba"
               },
               "comentario": "Reporte registrado",
-              "fecha": "2026-11-19T14:35:34.200605"
+              "fecha": "2026-11-19T22:00:37.054688"
             },
             {
               "id": 2,
@@ -1580,7 +1592,7 @@
                 "nombre": "Coordinación Prueba"
               },
               "comentario": "Aceptado con prioridad media",
-              "fecha": "2026-11-19T14:35:34.261291"
+              "fecha": "2026-11-19T22:00:37.086726"
             }
           ],
           "valoraciones": [],
@@ -1594,7 +1606,7 @@
                 "cargo": "docente"
               },
               "reporte_id": 1,
-              "fecha_reporte": "2026-11-19T14:35:34.199020",
+              "fecha_reporte": "2026-11-19T22:00:37.053868",
               "es_reporte_original": true
             }
           ],
@@ -1620,7 +1632,7 @@
           "rol": "responsable",
           "activa": true,
           "motivo": null,
-          "fecha_asignacion": "2026-11-19T14:35:34.287522",
+          "fecha_asignacion": "2026-11-19T22:00:37.106615",
           "fecha_retiro": null,
           "motivo_retiro": null
         }
@@ -1652,7 +1664,7 @@
           "estado": "asignado",
           "prioridad": "media",
           "duplicado_de_id": null,
-          "creado_en": "2026-11-19T14:35:34.199020",
+          "creado_en": "2026-11-19T22:00:37.053868",
           "creador": {
             "id": 4,
             "nombre": "Docente Prueba",
@@ -1678,7 +1690,7 @@
               "rol": "responsable",
               "activa": true,
               "motivo": null,
-              "fecha_asignacion": "2026-11-19T14:35:34.287522",
+              "fecha_asignacion": "2026-11-19T22:00:37.106615",
               "fecha_retiro": null,
               "motivo_retiro": null
             }
@@ -1694,7 +1706,7 @@
                 "nombre": "Docente Prueba"
               },
               "comentario": "Reporte registrado",
-              "fecha": "2026-11-19T14:35:34.200605"
+              "fecha": "2026-11-19T22:00:37.054688"
             },
             {
               "id": 2,
@@ -1705,7 +1717,7 @@
                 "nombre": "Coordinación Prueba"
               },
               "comentario": "Aceptado con prioridad media",
-              "fecha": "2026-11-19T14:35:34.261291"
+              "fecha": "2026-11-19T22:00:37.086726"
             },
             {
               "id": 3,
@@ -1716,7 +1728,7 @@
                 "nombre": "Coordinación Prueba"
               },
               "comentario": "Asignado a Técnico Uno",
-              "fecha": "2026-11-19T14:35:34.287976"
+              "fecha": "2026-11-19T22:00:37.106971"
             }
           ],
           "valoraciones": [],
@@ -1730,7 +1742,7 @@
                 "cargo": "docente"
               },
               "reporte_id": 1,
-              "fecha_reporte": "2026-11-19T14:35:34.199020",
+              "fecha_reporte": "2026-11-19T22:00:37.053868",
               "es_reporte_original": true
             }
           ],
@@ -1766,7 +1778,7 @@
             "estado": "asignado",
             "prioridad": "media",
             "duplicado_de_id": null,
-            "creado_en": "2026-11-19T14:35:34.199020",
+            "creado_en": "2026-11-19T22:00:37.053868",
             "creador": {
               "id": 4,
               "nombre": "Docente Prueba"
@@ -1819,6 +1831,8 @@
         ]
       }
     ],
+    "previo": "BD vacía de reportes con edificio «Bloque A», 3 espacios y una cuenta por perfil (coordinación, 2 técnicos, docente, administrativo), todas con sesión iniciada + reporte evaluado.",
+    "esperado": "HTTP 201; el reporte pasa a «asignado» y el técnico responsable lo ve en su lista.",
     "nodo": "test_pf07_asignar_responsable",
     "resultado": "APROBADA"
   },
@@ -1860,7 +1874,7 @@
           "estado": "reportado",
           "prioridad": null,
           "duplicado_de_id": null,
-          "creado_en": "2026-11-19T14:35:34.469717",
+          "creado_en": "2026-11-19T22:00:37.244926",
           "creador": {
             "id": 4,
             "nombre": "Docente Prueba",
@@ -1888,7 +1902,7 @@
                 "nombre": "Docente Prueba"
               },
               "comentario": "Reporte registrado",
-              "fecha": "2026-11-19T14:35:34.470777"
+              "fecha": "2026-11-19T22:00:37.245734"
             }
           ],
           "valoraciones": [],
@@ -1958,7 +1972,7 @@
       },
       {
         "metodo": "GET",
-        "ruta": "/consolidado/resumen",
+        "ruta": "/dashboard/resumen",
         "params": null,
         "usuario": "reportante (docente)",
         "cuerpo": null,
@@ -2007,7 +2021,7 @@
           "estado": "reportado",
           "prioridad": null,
           "duplicado_de_id": null,
-          "creado_en": "2026-11-19T14:35:34.469717",
+          "creado_en": "2026-11-19T22:00:37.244926",
           "creador": {
             "id": 4,
             "nombre": "Docente Prueba",
@@ -2035,7 +2049,7 @@
                 "nombre": "Docente Prueba"
               },
               "comentario": "Reporte registrado",
-              "fecha": "2026-11-19T14:35:34.470777"
+              "fecha": "2026-11-19T22:00:37.245734"
             }
           ],
           "valoraciones": [],
@@ -2049,7 +2063,7 @@
                 "cargo": "docente"
               },
               "reporte_id": 1,
-              "fecha_reporte": "2026-11-19T14:35:34.469717",
+              "fecha_reporte": "2026-11-19T22:00:37.244926",
               "es_reporte_original": true
             }
           ],
@@ -2058,6 +2072,8 @@
         }
       }
     ],
+    "previo": "BD vacía de reportes con edificio «Bloque A», 3 espacios y una cuenta por perfil (coordinación, 2 técnicos, docente, administrativo), todas con sesión iniciada + reporte en estado «reportado».",
+    "esperado": "HTTP 401 sin sesión y HTTP 403 para docente o técnico en evaluación, asignación, dashboard y usuarios; el reporte queda sin prioridad ni asignaciones.",
     "nodo": "test_pf08_usuario_no_autorizado",
     "resultado": "APROBADA"
   },
@@ -2099,7 +2115,7 @@
           "estado": "reportado",
           "prioridad": null,
           "duplicado_de_id": null,
-          "creado_en": "2026-11-19T14:35:34.706350",
+          "creado_en": "2026-11-19T22:00:37.416967",
           "creador": {
             "id": 4,
             "nombre": "Docente Prueba",
@@ -2127,7 +2143,7 @@
                 "nombre": "Docente Prueba"
               },
               "comentario": "Reporte registrado",
-              "fecha": "2026-11-19T14:35:34.707697"
+              "fecha": "2026-11-19T22:00:37.417769"
             }
           ],
           "valoraciones": [],
@@ -2166,7 +2182,7 @@
           "estado": "evaluado",
           "prioridad": "media",
           "duplicado_de_id": null,
-          "creado_en": "2026-11-19T14:35:34.706350",
+          "creado_en": "2026-11-19T22:00:37.416967",
           "creador": {
             "id": 4,
             "nombre": "Docente Prueba",
@@ -2194,7 +2210,7 @@
                 "nombre": "Docente Prueba"
               },
               "comentario": "Reporte registrado",
-              "fecha": "2026-11-19T14:35:34.707697"
+              "fecha": "2026-11-19T22:00:37.417769"
             },
             {
               "id": 2,
@@ -2205,7 +2221,7 @@
                 "nombre": "Coordinación Prueba"
               },
               "comentario": "Aceptado con prioridad media",
-              "fecha": "2026-11-19T14:35:34.790441"
+              "fecha": "2026-11-19T22:00:37.473047"
             }
           ],
           "valoraciones": [],
@@ -2219,7 +2235,7 @@
                 "cargo": "docente"
               },
               "reporte_id": 1,
-              "fecha_reporte": "2026-11-19T14:35:34.706350",
+              "fecha_reporte": "2026-11-19T22:00:37.416967",
               "es_reporte_original": true
             }
           ],
@@ -2245,7 +2261,7 @@
           "rol": "responsable",
           "activa": true,
           "motivo": null,
-          "fecha_asignacion": "2026-11-19T14:35:34.818701",
+          "fecha_asignacion": "2026-11-19T22:00:37.491301",
           "fecha_retiro": null,
           "motivo_retiro": null
         }
@@ -2272,7 +2288,7 @@
           "actividades": "Diagnóstico del circuito de iluminación",
           "tiempo_minutos": 30,
           "resultado": "Se identificó el balastro dañado",
-          "registrado_en": "2026-11-19T14:35:34.839028"
+          "registrado_en": "2026-11-19T22:00:37.504610"
         }
       },
       {
@@ -2302,7 +2318,7 @@
           "estado": "en_atencion",
           "prioridad": "media",
           "duplicado_de_id": null,
-          "creado_en": "2026-11-19T14:35:34.706350",
+          "creado_en": "2026-11-19T22:00:37.416967",
           "creador": {
             "id": 4,
             "nombre": "Docente Prueba",
@@ -2328,7 +2344,7 @@
               "rol": "responsable",
               "activa": true,
               "motivo": null,
-              "fecha_asignacion": "2026-11-19T14:35:34.818701",
+              "fecha_asignacion": "2026-11-19T22:00:37.491301",
               "fecha_retiro": null,
               "motivo_retiro": null
             }
@@ -2344,7 +2360,7 @@
               "actividades": "Diagnóstico del circuito de iluminación",
               "tiempo_minutos": 30,
               "resultado": "Se identificó el balastro dañado",
-              "registrado_en": "2026-11-19T14:35:34.839028"
+              "registrado_en": "2026-11-19T22:00:37.504610"
             }
           ],
           "historial": [
@@ -2357,7 +2373,7 @@
                 "nombre": "Docente Prueba"
               },
               "comentario": "Reporte registrado",
-              "fecha": "2026-11-19T14:35:34.707697"
+              "fecha": "2026-11-19T22:00:37.417769"
             },
             {
               "id": 2,
@@ -2368,7 +2384,7 @@
                 "nombre": "Coordinación Prueba"
               },
               "comentario": "Aceptado con prioridad media",
-              "fecha": "2026-11-19T14:35:34.790441"
+              "fecha": "2026-11-19T22:00:37.473047"
             },
             {
               "id": 3,
@@ -2379,7 +2395,7 @@
                 "nombre": "Coordinación Prueba"
               },
               "comentario": "Asignado a Técnico Uno",
-              "fecha": "2026-11-19T14:35:34.819086"
+              "fecha": "2026-11-19T22:00:37.491551"
             },
             {
               "id": 4,
@@ -2390,7 +2406,7 @@
                 "nombre": "Técnico Uno"
               },
               "comentario": "Primera intervención registrada",
-              "fecha": "2026-11-19T14:35:34.838156"
+              "fecha": "2026-11-19T22:00:37.503952"
             }
           ],
           "valoraciones": [],
@@ -2404,7 +2420,7 @@
                 "cargo": "docente"
               },
               "reporte_id": 1,
-              "fecha_reporte": "2026-11-19T14:35:34.706350",
+              "fecha_reporte": "2026-11-19T22:00:37.416967",
               "es_reporte_original": true
             }
           ],
@@ -2487,11 +2503,13 @@
             "actividades": "Diagnóstico del circuito de iluminación",
             "tiempo_minutos": 30,
             "resultado": "Se identificó el balastro dañado",
-            "registrado_en": "2026-11-19T14:35:34.839028"
+            "registrado_en": "2026-11-19T22:00:37.504610"
           }
         ]
       }
     ],
+    "previo": "BD vacía de reportes con edificio «Bloque A», 3 espacios y una cuenta por perfil (coordinación, 2 técnicos, docente, administrativo), todas con sesión iniciada + reporte asignado al técnico.",
+    "esperado": "HTTP 201; la intervención queda vinculada al reporte y el estado pasa a «en atención».",
     "nodo": "test_pf09_registrar_intervencion",
     "resultado": "APROBADA"
   },
@@ -2533,7 +2551,7 @@
           "estado": "reportado",
           "prioridad": null,
           "duplicado_de_id": null,
-          "creado_en": "2026-11-19T14:35:35.026105",
+          "creado_en": "2026-11-19T22:00:37.639645",
           "creador": {
             "id": 4,
             "nombre": "Docente Prueba",
@@ -2561,7 +2579,7 @@
                 "nombre": "Docente Prueba"
               },
               "comentario": "Reporte registrado",
-              "fecha": "2026-11-19T14:35:35.027196"
+              "fecha": "2026-11-19T22:00:37.640575"
             }
           ],
           "valoraciones": [],
@@ -2600,7 +2618,7 @@
           "estado": "evaluado",
           "prioridad": "media",
           "duplicado_de_id": null,
-          "creado_en": "2026-11-19T14:35:35.026105",
+          "creado_en": "2026-11-19T22:00:37.639645",
           "creador": {
             "id": 4,
             "nombre": "Docente Prueba",
@@ -2628,7 +2646,7 @@
                 "nombre": "Docente Prueba"
               },
               "comentario": "Reporte registrado",
-              "fecha": "2026-11-19T14:35:35.027196"
+              "fecha": "2026-11-19T22:00:37.640575"
             },
             {
               "id": 2,
@@ -2639,7 +2657,7 @@
                 "nombre": "Coordinación Prueba"
               },
               "comentario": "Aceptado con prioridad media",
-              "fecha": "2026-11-19T14:35:35.067250"
+              "fecha": "2026-11-19T22:00:37.669686"
             }
           ],
           "valoraciones": [],
@@ -2653,7 +2671,7 @@
                 "cargo": "docente"
               },
               "reporte_id": 1,
-              "fecha_reporte": "2026-11-19T14:35:35.026105",
+              "fecha_reporte": "2026-11-19T22:00:37.639645",
               "es_reporte_original": true
             }
           ],
@@ -2679,7 +2697,7 @@
           "rol": "responsable",
           "activa": true,
           "motivo": null,
-          "fecha_asignacion": "2026-11-19T14:35:35.091057",
+          "fecha_asignacion": "2026-11-19T22:00:37.687613",
           "fecha_retiro": null,
           "motivo_retiro": null
         }
@@ -2731,7 +2749,7 @@
           "estado": "reportado",
           "prioridad": null,
           "duplicado_de_id": null,
-          "creado_en": "2026-11-19T14:35:35.118305",
+          "creado_en": "2026-11-19T22:00:37.708337",
           "creador": {
             "id": 4,
             "nombre": "Docente Prueba",
@@ -2759,7 +2777,7 @@
                 "nombre": "Docente Prueba"
               },
               "comentario": "Reporte registrado",
-              "fecha": "2026-11-19T14:35:35.118896"
+              "fecha": "2026-11-19T22:00:37.708763"
             }
           ],
           "valoraciones": [],
@@ -2798,7 +2816,7 @@
           "estado": "evaluado",
           "prioridad": "media",
           "duplicado_de_id": null,
-          "creado_en": "2026-11-19T14:35:35.118305",
+          "creado_en": "2026-11-19T22:00:37.708337",
           "creador": {
             "id": 4,
             "nombre": "Docente Prueba",
@@ -2826,7 +2844,7 @@
                 "nombre": "Docente Prueba"
               },
               "comentario": "Reporte registrado",
-              "fecha": "2026-11-19T14:35:35.118896"
+              "fecha": "2026-11-19T22:00:37.708763"
             },
             {
               "id": 5,
@@ -2837,7 +2855,7 @@
                 "nombre": "Coordinación Prueba"
               },
               "comentario": "Aceptado con prioridad media",
-              "fecha": "2026-11-19T14:35:35.136030"
+              "fecha": "2026-11-19T22:00:37.720701"
             }
           ],
           "valoraciones": [],
@@ -2851,7 +2869,7 @@
                 "cargo": "docente"
               },
               "reporte_id": 2,
-              "fecha_reporte": "2026-11-19T14:35:35.118305",
+              "fecha_reporte": "2026-11-19T22:00:37.708337",
               "es_reporte_original": true
             }
           ],
@@ -2877,7 +2895,7 @@
           "rol": "responsable",
           "activa": true,
           "motivo": null,
-          "fecha_asignacion": "2026-11-19T14:35:35.153407",
+          "fecha_asignacion": "2026-11-19T22:00:37.734640",
           "fecha_retiro": null,
           "motivo_retiro": null
         }
@@ -2904,7 +2922,7 @@
           "actividades": "Cambio de la lámpara y revisión del circuito",
           "tiempo_minutos": 45,
           "resultado": "Iluminación restablecida",
-          "registrado_en": "2026-11-19T14:35:35.169722"
+          "registrado_en": "2026-11-19T22:00:37.746838"
         }
       },
       {
@@ -2937,7 +2955,7 @@
           "estado": "cerrado",
           "prioridad": "media",
           "duplicado_de_id": null,
-          "creado_en": "2026-11-19T14:35:35.118305",
+          "creado_en": "2026-11-19T22:00:37.708337",
           "creador": {
             "id": 4,
             "nombre": "Docente Prueba",
@@ -2951,7 +2969,7 @@
           "resultado_cierre": "resuelto",
           "descripcion_solucion": "Se reemplazó la lámpara defectuosa",
           "motivo_cierre": null,
-          "fecha_cierre": "2026-11-19T14:35:35.183090",
+          "fecha_cierre": "2026-11-19T22:00:37.757930",
           "fotos": [],
           "asignaciones": [
             {
@@ -2963,7 +2981,7 @@
               "rol": "responsable",
               "activa": true,
               "motivo": null,
-              "fecha_asignacion": "2026-11-19T14:35:35.153407",
+              "fecha_asignacion": "2026-11-19T22:00:37.734640",
               "fecha_retiro": null,
               "motivo_retiro": null
             }
@@ -2979,7 +2997,7 @@
               "actividades": "Cambio de la lámpara y revisión del circuito",
               "tiempo_minutos": 45,
               "resultado": "Iluminación restablecida",
-              "registrado_en": "2026-11-19T14:35:35.169722"
+              "registrado_en": "2026-11-19T22:00:37.746838"
             }
           ],
           "historial": [
@@ -2992,7 +3010,7 @@
                 "nombre": "Docente Prueba"
               },
               "comentario": "Reporte registrado",
-              "fecha": "2026-11-19T14:35:35.118896"
+              "fecha": "2026-11-19T22:00:37.708763"
             },
             {
               "id": 5,
@@ -3003,7 +3021,7 @@
                 "nombre": "Coordinación Prueba"
               },
               "comentario": "Aceptado con prioridad media",
-              "fecha": "2026-11-19T14:35:35.136030"
+              "fecha": "2026-11-19T22:00:37.720701"
             },
             {
               "id": 6,
@@ -3014,7 +3032,7 @@
                 "nombre": "Coordinación Prueba"
               },
               "comentario": "Asignado a Técnico Uno",
-              "fecha": "2026-11-19T14:35:35.153611"
+              "fecha": "2026-11-19T22:00:37.734848"
             },
             {
               "id": 7,
@@ -3025,7 +3043,7 @@
                 "nombre": "Técnico Uno"
               },
               "comentario": "Primera intervención registrada",
-              "fecha": "2026-11-19T14:35:35.169113"
+              "fecha": "2026-11-19T22:00:37.746406"
             },
             {
               "id": 8,
@@ -3036,7 +3054,7 @@
                 "nombre": "Técnico Uno"
               },
               "comentario": "Cerrado: resuelto",
-              "fecha": "2026-11-19T14:35:35.185054"
+              "fecha": "2026-11-19T22:00:37.759380"
             }
           ],
           "valoraciones": [],
@@ -3050,7 +3068,7 @@
                 "cargo": "docente"
               },
               "reporte_id": 2,
-              "fecha_reporte": "2026-11-19T14:35:35.118305",
+              "fecha_reporte": "2026-11-19T22:00:37.708337",
               "es_reporte_original": true
             }
           ],
@@ -3085,7 +3103,7 @@
           "estado": "cerrado",
           "prioridad": "media",
           "duplicado_de_id": null,
-          "creado_en": "2026-11-19T14:35:35.118305",
+          "creado_en": "2026-11-19T22:00:37.708337",
           "creador": {
             "id": 4,
             "nombre": "Docente Prueba",
@@ -3099,7 +3117,7 @@
           "resultado_cierre": "resuelto",
           "descripcion_solucion": "Se reemplazó la lámpara defectuosa",
           "motivo_cierre": null,
-          "fecha_cierre": "2026-11-19T14:35:35.183090",
+          "fecha_cierre": "2026-11-19T22:00:37.757930",
           "fotos": [],
           "asignaciones": [
             {
@@ -3111,7 +3129,7 @@
               "rol": "responsable",
               "activa": true,
               "motivo": null,
-              "fecha_asignacion": "2026-11-19T14:35:35.153407",
+              "fecha_asignacion": "2026-11-19T22:00:37.734640",
               "fecha_retiro": null,
               "motivo_retiro": null
             }
@@ -3127,7 +3145,7 @@
               "actividades": "Cambio de la lámpara y revisión del circuito",
               "tiempo_minutos": 45,
               "resultado": "Iluminación restablecida",
-              "registrado_en": "2026-11-19T14:35:35.169722"
+              "registrado_en": "2026-11-19T22:00:37.746838"
             }
           ],
           "historial": [
@@ -3140,7 +3158,7 @@
                 "nombre": "Docente Prueba"
               },
               "comentario": "Reporte registrado",
-              "fecha": "2026-11-19T14:35:35.118896"
+              "fecha": "2026-11-19T22:00:37.708763"
             },
             {
               "id": 5,
@@ -3151,7 +3169,7 @@
                 "nombre": "Coordinación Prueba"
               },
               "comentario": "Aceptado con prioridad media",
-              "fecha": "2026-11-19T14:35:35.136030"
+              "fecha": "2026-11-19T22:00:37.720701"
             },
             {
               "id": 6,
@@ -3162,7 +3180,7 @@
                 "nombre": "Coordinación Prueba"
               },
               "comentario": "Asignado a Técnico Uno",
-              "fecha": "2026-11-19T14:35:35.153611"
+              "fecha": "2026-11-19T22:00:37.734848"
             },
             {
               "id": 7,
@@ -3173,7 +3191,7 @@
                 "nombre": "Técnico Uno"
               },
               "comentario": "Primera intervención registrada",
-              "fecha": "2026-11-19T14:35:35.169113"
+              "fecha": "2026-11-19T22:00:37.746406"
             },
             {
               "id": 8,
@@ -3184,7 +3202,7 @@
                 "nombre": "Técnico Uno"
               },
               "comentario": "Cerrado: resuelto",
-              "fecha": "2026-11-19T14:35:35.185054"
+              "fecha": "2026-11-19T22:00:37.759380"
             }
           ],
           "valoraciones": [],
@@ -3209,12 +3227,14 @@
         }
       }
     ],
+    "previo": "BD vacía de reportes con edificio «Bloque A», 3 espacios y una cuenta por perfil (coordinación, 2 técnicos, docente, administrativo), todas con sesión iniciada + reporte en atención con una intervención registrada.",
+    "esperado": "Estado «cerrado» con resultado y descripción de la solución; el historial muestra todas las transiciones.",
     "nodo": "test_pf10_cerrar_reporte",
     "resultado": "APROBADA"
   },
   {
     "id": "PF-11",
-    "titulo": "Consultar información consolidada con conteos y filtros coherentes",
+    "titulo": "Consultar el dashboard con conteos y filtros coherentes",
     "requisito": "RF-12",
     "ca": "CA-06",
     "pasos": [
@@ -3250,7 +3270,7 @@
           "estado": "reportado",
           "prioridad": null,
           "duplicado_de_id": null,
-          "creado_en": "2026-11-19T14:35:35.337717",
+          "creado_en": "2026-11-19T22:00:37.867502",
           "creador": {
             "id": 4,
             "nombre": "Docente Prueba",
@@ -3278,7 +3298,7 @@
                 "nombre": "Docente Prueba"
               },
               "comentario": "Reporte registrado",
-              "fecha": "2026-11-19T14:35:35.338868"
+              "fecha": "2026-11-19T22:00:37.868316"
             }
           ],
           "valoraciones": [],
@@ -3319,7 +3339,7 @@
           "estado": "reportado",
           "prioridad": null,
           "duplicado_de_id": null,
-          "creado_en": "2026-11-19T14:35:35.372152",
+          "creado_en": "2026-11-19T22:00:37.892485",
           "creador": {
             "id": 5,
             "nombre": "Administrativo Prueba",
@@ -3347,7 +3367,7 @@
                 "nombre": "Administrativo Prueba"
               },
               "comentario": "Reporte registrado",
-              "fecha": "2026-11-19T14:35:35.372785"
+              "fecha": "2026-11-19T22:00:37.892907"
             }
           ],
           "valoraciones": [],
@@ -3388,7 +3408,7 @@
           "estado": "reportado",
           "prioridad": null,
           "duplicado_de_id": null,
-          "creado_en": "2026-11-19T14:35:35.389407",
+          "creado_en": "2026-11-19T22:00:37.904394",
           "creador": {
             "id": 4,
             "nombre": "Docente Prueba",
@@ -3416,7 +3436,7 @@
                 "nombre": "Docente Prueba"
               },
               "comentario": "Reporte registrado",
-              "fecha": "2026-11-19T14:35:35.389982"
+              "fecha": "2026-11-19T22:00:37.904861"
             }
           ],
           "valoraciones": [],
@@ -3455,7 +3475,7 @@
           "estado": "evaluado",
           "prioridad": "media",
           "duplicado_de_id": null,
-          "creado_en": "2026-11-19T14:35:35.337717",
+          "creado_en": "2026-11-19T22:00:37.867502",
           "creador": {
             "id": 4,
             "nombre": "Docente Prueba",
@@ -3483,7 +3503,7 @@
                 "nombre": "Docente Prueba"
               },
               "comentario": "Reporte registrado",
-              "fecha": "2026-11-19T14:35:35.338868"
+              "fecha": "2026-11-19T22:00:37.868316"
             },
             {
               "id": 4,
@@ -3494,7 +3514,7 @@
                 "nombre": "Coordinación Prueba"
               },
               "comentario": "Aceptado con prioridad media",
-              "fecha": "2026-11-19T14:35:35.413167"
+              "fecha": "2026-11-19T22:00:37.921420"
             }
           ],
           "valoraciones": [],
@@ -3508,7 +3528,7 @@
                 "cargo": "docente"
               },
               "reporte_id": 1,
-              "fecha_reporte": "2026-11-19T14:35:35.337717",
+              "fecha_reporte": "2026-11-19T22:00:37.867502",
               "es_reporte_original": true
             }
           ],
@@ -3534,7 +3554,7 @@
           "rol": "responsable",
           "activa": true,
           "motivo": null,
-          "fecha_asignacion": "2026-11-19T14:35:35.439358",
+          "fecha_asignacion": "2026-11-19T22:00:37.941256",
           "fecha_retiro": null,
           "motivo_retiro": null
         }
@@ -3561,12 +3581,12 @@
           "actividades": "Cambio de la lámpara y revisión del circuito",
           "tiempo_minutos": 45,
           "resultado": "Iluminación restablecida",
-          "registrado_en": "2026-11-19T14:35:35.456598"
+          "registrado_en": "2026-11-19T22:00:37.953718"
         }
       },
       {
         "metodo": "GET",
-        "ruta": "/consolidado/resumen",
+        "ruta": "/dashboard/resumen",
         "params": null,
         "usuario": "coordinación",
         "cuerpo": null,
@@ -3635,7 +3655,7 @@
       },
       {
         "metodo": "GET",
-        "ruta": "/consolidado/resumen",
+        "ruta": "/dashboard/resumen",
         "params": {
           "desde": "2026-11-19",
           "hasta": "2026-11-19"
@@ -3707,7 +3727,7 @@
       },
       {
         "metodo": "GET",
-        "ruta": "/consolidado/resumen",
+        "ruta": "/dashboard/resumen",
         "params": {
           "desde": "2026-11-24"
         },
@@ -3728,7 +3748,7 @@
       },
       {
         "metodo": "GET",
-        "ruta": "/consolidado/resumen",
+        "ruta": "/dashboard/resumen",
         "params": {
           "desde": "2026-11-24",
           "hasta": "2026-11-19"
@@ -3772,7 +3792,7 @@
             "estado": "reportado",
             "prioridad": null,
             "duplicado_de_id": null,
-            "creado_en": "2026-11-19T14:35:35.372152",
+            "creado_en": "2026-11-19T22:00:37.892485",
             "creador": {
               "id": 5,
               "nombre": "Administrativo Prueba"
@@ -3782,7 +3802,9 @@
         ]
       }
     ],
-    "nodo": "test_pf11_consolidado",
+    "previo": "BD vacía de reportes con edificio «Bloque A», 3 espacios y una cuenta por perfil (coordinación, 2 técnicos, docente, administrativo), todas con sesión iniciada + reportes en distintos estados, prioridades y tipos.",
+    "esperado": "Los conteos del dashboard coinciden con los reportes creados y los filtros reducen el resultado de forma coherente.",
+    "nodo": "test_pf11_dashboard",
     "resultado": "APROBADA"
   },
   {
@@ -3824,7 +3846,7 @@
           "estado": "reportado",
           "prioridad": null,
           "duplicado_de_id": null,
-          "creado_en": "2026-11-19T14:35:35.672054",
+          "creado_en": "2026-11-19T22:00:38.110605",
           "creador": {
             "id": 4,
             "nombre": "Docente Prueba",
@@ -3852,7 +3874,7 @@
                 "nombre": "Docente Prueba"
               },
               "comentario": "Reporte registrado",
-              "fecha": "2026-11-19T14:35:35.673217"
+              "fecha": "2026-11-19T22:00:38.111403"
             }
           ],
           "valoraciones": [],
@@ -3873,7 +3895,7 @@
           "nombre_original": "falla.png",
           "tipo_contenido": "image/png",
           "tamano_bytes": 72,
-          "subido_en": "2026-11-19T14:35:35.716842"
+          "subido_en": "2026-11-19T22:00:38.142541"
         }
       },
       {
@@ -3893,7 +3915,7 @@
             "nombre": "Técnico Uno"
           },
           "indicaciones": "Revisar si es falla eléctrica",
-          "fecha_solicitud": "2026-11-19T14:35:35.734787",
+          "fecha_solicitud": "2026-11-19T22:00:38.153833",
           "concepto": null,
           "fecha_respuesta": null
         }
@@ -3926,7 +3948,7 @@
             "estado": "reportado",
             "prioridad": null,
             "duplicado_de_id": null,
-            "creado_en": "2026-11-19T14:35:35.672054",
+            "creado_en": "2026-11-19T22:00:38.110605",
             "creador": {
               "id": 4,
               "nombre": "Docente Prueba"
@@ -3951,9 +3973,9 @@
             "nombre": "Técnico Uno"
           },
           "indicaciones": "Revisar si es falla eléctrica",
-          "fecha_solicitud": "2026-11-19T14:35:35.734787",
+          "fecha_solicitud": "2026-11-19T22:00:38.153833",
           "concepto": "Falla en el tablero, requiere intervención eléctrica",
-          "fecha_respuesta": "2026-11-19T14:35:35.770235"
+          "fecha_respuesta": "2026-11-19T22:00:38.180113"
         }
       },
       {
@@ -3986,7 +4008,7 @@
           "estado": "evaluado",
           "prioridad": "alta",
           "duplicado_de_id": null,
-          "creado_en": "2026-11-19T14:35:35.672054",
+          "creado_en": "2026-11-19T22:00:38.110605",
           "creador": {
             "id": 4,
             "nombre": "Docente Prueba",
@@ -4007,7 +4029,7 @@
               "nombre_original": "falla.png",
               "tipo_contenido": "image/png",
               "tamano_bytes": 72,
-              "subido_en": "2026-11-19T14:35:35.716842"
+              "subido_en": "2026-11-19T22:00:38.142541"
             }
           ],
           "asignaciones": [],
@@ -4022,7 +4044,7 @@
                 "nombre": "Docente Prueba"
               },
               "comentario": "Reporte registrado",
-              "fecha": "2026-11-19T14:35:35.673217"
+              "fecha": "2026-11-19T22:00:38.111403"
             },
             {
               "id": 2,
@@ -4033,7 +4055,7 @@
                 "nombre": "Coordinación Prueba"
               },
               "comentario": "Aceptado con prioridad alta",
-              "fecha": "2026-11-19T14:35:35.785782"
+              "fecha": "2026-11-19T22:00:38.192366"
             }
           ],
           "valoraciones": [
@@ -4044,9 +4066,9 @@
                 "nombre": "Técnico Uno"
               },
               "indicaciones": "Revisar si es falla eléctrica",
-              "fecha_solicitud": "2026-11-19T14:35:35.734787",
+              "fecha_solicitud": "2026-11-19T22:00:38.153833",
               "concepto": "Falla en el tablero, requiere intervención eléctrica",
-              "fecha_respuesta": "2026-11-19T14:35:35.770235"
+              "fecha_respuesta": "2026-11-19T22:00:38.180113"
             }
           ],
           "reportantes": [
@@ -4059,7 +4081,7 @@
                 "cargo": "docente"
               },
               "reporte_id": 1,
-              "fecha_reporte": "2026-11-19T14:35:35.672054",
+              "fecha_reporte": "2026-11-19T22:00:38.110605",
               "es_reporte_original": true
             }
           ],
@@ -4085,7 +4107,7 @@
           "rol": "responsable",
           "activa": true,
           "motivo": null,
-          "fecha_asignacion": "2026-11-19T14:35:35.810737",
+          "fecha_asignacion": "2026-11-19T22:00:38.210122",
           "fecha_retiro": null,
           "motivo_retiro": null
         }
@@ -4109,7 +4131,7 @@
           "rol": "apoyo",
           "activa": true,
           "motivo": null,
-          "fecha_asignacion": "2026-11-19T14:35:35.826411",
+          "fecha_asignacion": "2026-11-19T22:00:38.221954",
           "fecha_retiro": null,
           "motivo_retiro": null
         }
@@ -4136,7 +4158,7 @@
           "actividades": "Cambio de la lámpara y revisión del circuito",
           "tiempo_minutos": 45,
           "resultado": "Iluminación restablecida",
-          "registrado_en": "2026-11-19T14:35:35.842690"
+          "registrado_en": "2026-11-19T22:00:38.234446"
         }
       },
       {
@@ -4161,7 +4183,7 @@
           "actividades": "Apoyo en el cableado del tablero",
           "tiempo_minutos": 45,
           "resultado": "Iluminación restablecida",
-          "registrado_en": "2026-11-19T14:35:35.855992"
+          "registrado_en": "2026-11-19T22:00:38.244789"
         }
       },
       {
@@ -4194,7 +4216,7 @@
           "estado": "en_verificacion",
           "prioridad": "alta",
           "duplicado_de_id": null,
-          "creado_en": "2026-11-19T14:35:35.672054",
+          "creado_en": "2026-11-19T22:00:38.110605",
           "creador": {
             "id": 4,
             "nombre": "Docente Prueba",
@@ -4215,7 +4237,7 @@
               "nombre_original": "falla.png",
               "tipo_contenido": "image/png",
               "tamano_bytes": 72,
-              "subido_en": "2026-11-19T14:35:35.716842"
+              "subido_en": "2026-11-19T22:00:38.142541"
             }
           ],
           "asignaciones": [
@@ -4228,7 +4250,7 @@
               "rol": "responsable",
               "activa": true,
               "motivo": null,
-              "fecha_asignacion": "2026-11-19T14:35:35.810737",
+              "fecha_asignacion": "2026-11-19T22:00:38.210122",
               "fecha_retiro": null,
               "motivo_retiro": null
             },
@@ -4241,7 +4263,7 @@
               "rol": "apoyo",
               "activa": true,
               "motivo": null,
-              "fecha_asignacion": "2026-11-19T14:35:35.826411",
+              "fecha_asignacion": "2026-11-19T22:00:38.221954",
               "fecha_retiro": null,
               "motivo_retiro": null
             }
@@ -4257,7 +4279,7 @@
               "actividades": "Cambio de la lámpara y revisión del circuito",
               "tiempo_minutos": 45,
               "resultado": "Iluminación restablecida",
-              "registrado_en": "2026-11-19T14:35:35.842690"
+              "registrado_en": "2026-11-19T22:00:38.234446"
             },
             {
               "id": 2,
@@ -4269,7 +4291,7 @@
               "actividades": "Apoyo en el cableado del tablero",
               "tiempo_minutos": 45,
               "resultado": "Iluminación restablecida",
-              "registrado_en": "2026-11-19T14:35:35.855992"
+              "registrado_en": "2026-11-19T22:00:38.244789"
             }
           ],
           "historial": [
@@ -4282,7 +4304,7 @@
                 "nombre": "Docente Prueba"
               },
               "comentario": "Reporte registrado",
-              "fecha": "2026-11-19T14:35:35.673217"
+              "fecha": "2026-11-19T22:00:38.111403"
             },
             {
               "id": 2,
@@ -4293,7 +4315,7 @@
                 "nombre": "Coordinación Prueba"
               },
               "comentario": "Aceptado con prioridad alta",
-              "fecha": "2026-11-19T14:35:35.785782"
+              "fecha": "2026-11-19T22:00:38.192366"
             },
             {
               "id": 3,
@@ -4304,7 +4326,7 @@
                 "nombre": "Coordinación Prueba"
               },
               "comentario": "Asignado a Técnico Uno",
-              "fecha": "2026-11-19T14:35:35.811083"
+              "fecha": "2026-11-19T22:00:38.210358"
             },
             {
               "id": 4,
@@ -4315,7 +4337,7 @@
                 "nombre": "Técnico Uno"
               },
               "comentario": "Primera intervención registrada",
-              "fecha": "2026-11-19T14:35:35.842098"
+              "fecha": "2026-11-19T22:00:38.233997"
             },
             {
               "id": 5,
@@ -4326,7 +4348,7 @@
                 "nombre": "Técnico Uno"
               },
               "comentario": "Trabajo finalizado (resuelto); pendiente de verificación",
-              "fecha": "2026-11-19T14:35:35.874395"
+              "fecha": "2026-11-19T22:00:38.257323"
             }
           ],
           "valoraciones": [
@@ -4337,9 +4359,9 @@
                 "nombre": "Técnico Uno"
               },
               "indicaciones": "Revisar si es falla eléctrica",
-              "fecha_solicitud": "2026-11-19T14:35:35.734787",
+              "fecha_solicitud": "2026-11-19T22:00:38.153833",
               "concepto": "Falla en el tablero, requiere intervención eléctrica",
-              "fecha_respuesta": "2026-11-19T14:35:35.770235"
+              "fecha_respuesta": "2026-11-19T22:00:38.180113"
             }
           ],
           "reportantes": [
@@ -4352,7 +4374,7 @@
                 "cargo": "docente"
               },
               "reporte_id": 1,
-              "fecha_reporte": "2026-11-19T14:35:35.672054",
+              "fecha_reporte": "2026-11-19T22:00:38.110605",
               "es_reporte_original": true
             }
           ],
@@ -4389,7 +4411,7 @@
           "estado": "cerrado",
           "prioridad": "alta",
           "duplicado_de_id": null,
-          "creado_en": "2026-11-19T14:35:35.672054",
+          "creado_en": "2026-11-19T22:00:38.110605",
           "creador": {
             "id": 4,
             "nombre": "Docente Prueba",
@@ -4403,14 +4425,14 @@
           "resultado_cierre": "resuelto",
           "descripcion_solucion": "Se reemplazó la lámpara defectuosa",
           "motivo_cierre": null,
-          "fecha_cierre": "2026-11-19T14:35:35.890523",
+          "fecha_cierre": "2026-11-19T22:00:38.269632",
           "fotos": [
             {
               "id": 1,
               "nombre_original": "falla.png",
               "tipo_contenido": "image/png",
               "tamano_bytes": 72,
-              "subido_en": "2026-11-19T14:35:35.716842"
+              "subido_en": "2026-11-19T22:00:38.142541"
             }
           ],
           "asignaciones": [
@@ -4423,7 +4445,7 @@
               "rol": "responsable",
               "activa": true,
               "motivo": null,
-              "fecha_asignacion": "2026-11-19T14:35:35.810737",
+              "fecha_asignacion": "2026-11-19T22:00:38.210122",
               "fecha_retiro": null,
               "motivo_retiro": null
             },
@@ -4436,7 +4458,7 @@
               "rol": "apoyo",
               "activa": true,
               "motivo": null,
-              "fecha_asignacion": "2026-11-19T14:35:35.826411",
+              "fecha_asignacion": "2026-11-19T22:00:38.221954",
               "fecha_retiro": null,
               "motivo_retiro": null
             }
@@ -4452,7 +4474,7 @@
               "actividades": "Cambio de la lámpara y revisión del circuito",
               "tiempo_minutos": 45,
               "resultado": "Iluminación restablecida",
-              "registrado_en": "2026-11-19T14:35:35.842690"
+              "registrado_en": "2026-11-19T22:00:38.234446"
             },
             {
               "id": 2,
@@ -4464,7 +4486,7 @@
               "actividades": "Apoyo en el cableado del tablero",
               "tiempo_minutos": 45,
               "resultado": "Iluminación restablecida",
-              "registrado_en": "2026-11-19T14:35:35.855992"
+              "registrado_en": "2026-11-19T22:00:38.244789"
             }
           ],
           "historial": [
@@ -4477,7 +4499,7 @@
                 "nombre": "Docente Prueba"
               },
               "comentario": "Reporte registrado",
-              "fecha": "2026-11-19T14:35:35.673217"
+              "fecha": "2026-11-19T22:00:38.111403"
             },
             {
               "id": 2,
@@ -4488,7 +4510,7 @@
                 "nombre": "Coordinación Prueba"
               },
               "comentario": "Aceptado con prioridad alta",
-              "fecha": "2026-11-19T14:35:35.785782"
+              "fecha": "2026-11-19T22:00:38.192366"
             },
             {
               "id": 3,
@@ -4499,7 +4521,7 @@
                 "nombre": "Coordinación Prueba"
               },
               "comentario": "Asignado a Técnico Uno",
-              "fecha": "2026-11-19T14:35:35.811083"
+              "fecha": "2026-11-19T22:00:38.210358"
             },
             {
               "id": 4,
@@ -4510,7 +4532,7 @@
                 "nombre": "Técnico Uno"
               },
               "comentario": "Primera intervención registrada",
-              "fecha": "2026-11-19T14:35:35.842098"
+              "fecha": "2026-11-19T22:00:38.233997"
             },
             {
               "id": 5,
@@ -4521,7 +4543,7 @@
                 "nombre": "Técnico Uno"
               },
               "comentario": "Trabajo finalizado (resuelto); pendiente de verificación",
-              "fecha": "2026-11-19T14:35:35.874395"
+              "fecha": "2026-11-19T22:00:38.257323"
             },
             {
               "id": 6,
@@ -4532,7 +4554,7 @@
                 "nombre": "Coordinación Prueba"
               },
               "comentario": "Cierre verificado",
-              "fecha": "2026-11-19T14:35:35.892183"
+              "fecha": "2026-11-19T22:00:38.270943"
             }
           ],
           "valoraciones": [
@@ -4543,9 +4565,9 @@
                 "nombre": "Técnico Uno"
               },
               "indicaciones": "Revisar si es falla eléctrica",
-              "fecha_solicitud": "2026-11-19T14:35:35.734787",
+              "fecha_solicitud": "2026-11-19T22:00:38.153833",
               "concepto": "Falla en el tablero, requiere intervención eléctrica",
-              "fecha_respuesta": "2026-11-19T14:35:35.770235"
+              "fecha_respuesta": "2026-11-19T22:00:38.180113"
             }
           ],
           "reportantes": [
@@ -4558,7 +4580,7 @@
                 "cargo": "docente"
               },
               "reporte_id": 1,
-              "fecha_reporte": "2026-11-19T14:35:35.672054",
+              "fecha_reporte": "2026-11-19T22:00:38.110605",
               "es_reporte_original": true
             }
           ],
@@ -4593,7 +4615,7 @@
           "estado": "cerrado",
           "prioridad": "alta",
           "duplicado_de_id": null,
-          "creado_en": "2026-11-19T14:35:35.672054",
+          "creado_en": "2026-11-19T22:00:38.110605",
           "creador": {
             "id": 4,
             "nombre": "Docente Prueba",
@@ -4607,14 +4629,14 @@
           "resultado_cierre": "resuelto",
           "descripcion_solucion": "Se reemplazó la lámpara defectuosa",
           "motivo_cierre": null,
-          "fecha_cierre": "2026-11-19T14:35:35.890523",
+          "fecha_cierre": "2026-11-19T22:00:38.269632",
           "fotos": [
             {
               "id": 1,
               "nombre_original": "falla.png",
               "tipo_contenido": "image/png",
               "tamano_bytes": 72,
-              "subido_en": "2026-11-19T14:35:35.716842"
+              "subido_en": "2026-11-19T22:00:38.142541"
             }
           ],
           "asignaciones": [
@@ -4627,7 +4649,7 @@
               "rol": "responsable",
               "activa": true,
               "motivo": null,
-              "fecha_asignacion": "2026-11-19T14:35:35.810737",
+              "fecha_asignacion": "2026-11-19T22:00:38.210122",
               "fecha_retiro": null,
               "motivo_retiro": null
             },
@@ -4640,7 +4662,7 @@
               "rol": "apoyo",
               "activa": true,
               "motivo": null,
-              "fecha_asignacion": "2026-11-19T14:35:35.826411",
+              "fecha_asignacion": "2026-11-19T22:00:38.221954",
               "fecha_retiro": null,
               "motivo_retiro": null
             }
@@ -4656,7 +4678,7 @@
               "actividades": "Cambio de la lámpara y revisión del circuito",
               "tiempo_minutos": 45,
               "resultado": "Iluminación restablecida",
-              "registrado_en": "2026-11-19T14:35:35.842690"
+              "registrado_en": "2026-11-19T22:00:38.234446"
             },
             {
               "id": 2,
@@ -4668,7 +4690,7 @@
               "actividades": "Apoyo en el cableado del tablero",
               "tiempo_minutos": 45,
               "resultado": "Iluminación restablecida",
-              "registrado_en": "2026-11-19T14:35:35.855992"
+              "registrado_en": "2026-11-19T22:00:38.244789"
             }
           ],
           "historial": [
@@ -4681,7 +4703,7 @@
                 "nombre": "Docente Prueba"
               },
               "comentario": "Reporte registrado",
-              "fecha": "2026-11-19T14:35:35.673217"
+              "fecha": "2026-11-19T22:00:38.111403"
             },
             {
               "id": 2,
@@ -4692,7 +4714,7 @@
                 "nombre": "Coordinación Prueba"
               },
               "comentario": "Aceptado con prioridad alta",
-              "fecha": "2026-11-19T14:35:35.785782"
+              "fecha": "2026-11-19T22:00:38.192366"
             },
             {
               "id": 3,
@@ -4703,7 +4725,7 @@
                 "nombre": "Coordinación Prueba"
               },
               "comentario": "Asignado a Técnico Uno",
-              "fecha": "2026-11-19T14:35:35.811083"
+              "fecha": "2026-11-19T22:00:38.210358"
             },
             {
               "id": 4,
@@ -4714,7 +4736,7 @@
                 "nombre": "Técnico Uno"
               },
               "comentario": "Primera intervención registrada",
-              "fecha": "2026-11-19T14:35:35.842098"
+              "fecha": "2026-11-19T22:00:38.233997"
             },
             {
               "id": 5,
@@ -4725,7 +4747,7 @@
                 "nombre": "Técnico Uno"
               },
               "comentario": "Trabajo finalizado (resuelto); pendiente de verificación",
-              "fecha": "2026-11-19T14:35:35.874395"
+              "fecha": "2026-11-19T22:00:38.257323"
             },
             {
               "id": 6,
@@ -4736,7 +4758,7 @@
                 "nombre": "Coordinación Prueba"
               },
               "comentario": "Cierre verificado",
-              "fecha": "2026-11-19T14:35:35.892183"
+              "fecha": "2026-11-19T22:00:38.270943"
             }
           ],
           "valoraciones": [
@@ -4747,9 +4769,9 @@
                 "nombre": "Técnico Uno"
               },
               "indicaciones": "Revisar si es falla eléctrica",
-              "fecha_solicitud": "2026-11-19T14:35:35.734787",
+              "fecha_solicitud": "2026-11-19T22:00:38.153833",
               "concepto": "Falla en el tablero, requiere intervención eléctrica",
-              "fecha_respuesta": "2026-11-19T14:35:35.770235"
+              "fecha_respuesta": "2026-11-19T22:00:38.180113"
             }
           ],
           "reportantes": [],
@@ -4768,7 +4790,7 @@
       },
       {
         "metodo": "GET",
-        "ruta": "/consolidado/resumen",
+        "ruta": "/dashboard/resumen",
         "params": null,
         "usuario": "coordinación",
         "cuerpo": null,
@@ -4827,6 +4849,8 @@
         }
       }
     ],
+    "previo": "BD vacía de reportes con edificio «Bloque A», 3 espacios y una cuenta por perfil (coordinación, 2 técnicos, docente, administrativo), todas con sesión iniciada.",
+    "esperado": "Todo el recorrido responde sin error y el reporte termina «cerrado» con su historial completo.",
     "nodo": "test_pf12_flujo_completo",
     "resultado": "APROBADA"
   },
@@ -4868,7 +4892,7 @@
           "estado": "reportado",
           "prioridad": null,
           "duplicado_de_id": null,
-          "creado_en": "2026-11-19T14:35:36.101893",
+          "creado_en": "2026-11-19T22:00:38.421813",
           "creador": {
             "id": 4,
             "nombre": "Docente Prueba",
@@ -4896,7 +4920,7 @@
                 "nombre": "Docente Prueba"
               },
               "comentario": "Reporte registrado",
-              "fecha": "2026-11-19T14:35:36.103036"
+              "fecha": "2026-11-19T22:00:38.423196"
             }
           ],
           "valoraciones": [],
@@ -4937,7 +4961,7 @@
           "estado": "reportado",
           "prioridad": null,
           "duplicado_de_id": null,
-          "creado_en": "2026-11-19T14:35:36.136626",
+          "creado_en": "2026-11-19T22:00:38.449010",
           "creador": {
             "id": 5,
             "nombre": "Administrativo Prueba",
@@ -4965,7 +4989,7 @@
                 "nombre": "Administrativo Prueba"
               },
               "comentario": "Reporte registrado",
-              "fecha": "2026-11-19T14:35:36.137193"
+              "fecha": "2026-11-19T22:00:38.449445"
             }
           ],
           "valoraciones": [],
@@ -5002,7 +5026,7 @@
             "estado": "reportado",
             "prioridad": null,
             "duplicado_de_id": null,
-            "creado_en": "2026-11-19T14:35:36.101893",
+            "creado_en": "2026-11-19T22:00:38.421813",
             "creador": {
               "id": 4,
               "nombre": "Docente Prueba"
@@ -5061,7 +5085,7 @@
           "estado": "duplicado",
           "prioridad": null,
           "duplicado_de_id": 1,
-          "creado_en": "2026-11-19T14:35:36.136626",
+          "creado_en": "2026-11-19T22:00:38.449010",
           "creador": {
             "id": 5,
             "nombre": "Administrativo Prueba",
@@ -5089,7 +5113,7 @@
                 "nombre": "Administrativo Prueba"
               },
               "comentario": "Reporte registrado",
-              "fecha": "2026-11-19T14:35:36.137193"
+              "fecha": "2026-11-19T22:00:38.449445"
             },
             {
               "id": 3,
@@ -5100,7 +5124,7 @@
                 "nombre": "Coordinación Prueba"
               },
               "comentario": "Duplicado del reporte #1",
-              "fecha": "2026-11-19T14:35:36.192849"
+              "fecha": "2026-11-19T22:00:38.491506"
             }
           ],
           "valoraciones": [],
@@ -5114,7 +5138,7 @@
                 "cargo": "administrativo"
               },
               "reporte_id": 2,
-              "fecha_reporte": "2026-11-19T14:35:36.136626",
+              "fecha_reporte": "2026-11-19T22:00:38.449010",
               "es_reporte_original": true
             }
           ],
@@ -5167,7 +5191,7 @@
           "estado": "evaluado",
           "prioridad": "media",
           "duplicado_de_id": null,
-          "creado_en": "2026-11-19T14:35:36.101893",
+          "creado_en": "2026-11-19T22:00:38.421813",
           "creador": {
             "id": 4,
             "nombre": "Docente Prueba",
@@ -5195,7 +5219,7 @@
                 "nombre": "Docente Prueba"
               },
               "comentario": "Reporte registrado",
-              "fecha": "2026-11-19T14:35:36.103036"
+              "fecha": "2026-11-19T22:00:38.423196"
             },
             {
               "id": 4,
@@ -5206,7 +5230,7 @@
                 "nombre": "Coordinación Prueba"
               },
               "comentario": "Aceptado con prioridad media",
-              "fecha": "2026-11-19T14:35:36.228760"
+              "fecha": "2026-11-19T22:00:38.517372"
             }
           ],
           "valoraciones": [],
@@ -5220,7 +5244,7 @@
                 "cargo": "docente"
               },
               "reporte_id": 1,
-              "fecha_reporte": "2026-11-19T14:35:36.101893",
+              "fecha_reporte": "2026-11-19T22:00:38.421813",
               "es_reporte_original": true
             },
             {
@@ -5232,7 +5256,7 @@
                 "cargo": "administrativo"
               },
               "reporte_id": 2,
-              "fecha_reporte": "2026-11-19T14:35:36.136626",
+              "fecha_reporte": "2026-11-19T22:00:38.449010",
               "es_reporte_original": false
             }
           ],
@@ -5267,7 +5291,7 @@
           "estado": "evaluado",
           "prioridad": "media",
           "duplicado_de_id": null,
-          "creado_en": "2026-11-19T14:35:36.101893",
+          "creado_en": "2026-11-19T22:00:38.421813",
           "creador": {
             "id": 4,
             "nombre": "Docente Prueba",
@@ -5295,7 +5319,7 @@
                 "nombre": "Docente Prueba"
               },
               "comentario": "Reporte registrado",
-              "fecha": "2026-11-19T14:35:36.103036"
+              "fecha": "2026-11-19T22:00:38.423196"
             },
             {
               "id": 4,
@@ -5306,7 +5330,7 @@
                 "nombre": "Coordinación Prueba"
               },
               "comentario": "Aceptado con prioridad media",
-              "fecha": "2026-11-19T14:35:36.228760"
+              "fecha": "2026-11-19T22:00:38.517372"
             }
           ],
           "valoraciones": [],
@@ -5320,7 +5344,7 @@
                 "cargo": "docente"
               },
               "reporte_id": 1,
-              "fecha_reporte": "2026-11-19T14:35:36.101893",
+              "fecha_reporte": "2026-11-19T22:00:38.421813",
               "es_reporte_original": true
             },
             {
@@ -5332,7 +5356,7 @@
                 "cargo": "administrativo"
               },
               "reporte_id": 2,
-              "fecha_reporte": "2026-11-19T14:35:36.136626",
+              "fecha_reporte": "2026-11-19T22:00:38.449010",
               "es_reporte_original": false
             }
           ],
@@ -5367,7 +5391,7 @@
           "estado": "duplicado",
           "prioridad": null,
           "duplicado_de_id": 1,
-          "creado_en": "2026-11-19T14:35:36.136626",
+          "creado_en": "2026-11-19T22:00:38.449010",
           "creador": {
             "id": 5,
             "nombre": "Administrativo Prueba",
@@ -5395,7 +5419,7 @@
                 "nombre": "Administrativo Prueba"
               },
               "comentario": "Reporte registrado",
-              "fecha": "2026-11-19T14:35:36.137193"
+              "fecha": "2026-11-19T22:00:38.449445"
             },
             {
               "id": 3,
@@ -5406,7 +5430,7 @@
                 "nombre": "Coordinación Prueba"
               },
               "comentario": "Duplicado del reporte #1",
-              "fecha": "2026-11-19T14:35:36.192849"
+              "fecha": "2026-11-19T22:00:38.491506"
             }
           ],
           "valoraciones": [],
@@ -5417,7 +5441,7 @@
       },
       {
         "metodo": "GET",
-        "ruta": "/consolidado/resumen",
+        "ruta": "/dashboard/resumen",
         "params": null,
         "usuario": "coordinación",
         "cuerpo": null,
@@ -5469,6 +5493,8 @@
         }
       }
     ],
+    "previo": "BD vacía de reportes con edificio «Bloque A», 3 espacios y una cuenta por perfil (coordinación, 2 técnicos, docente, administrativo), todas con sesión iniciada + reporte original y reportes del mismo problema.",
+    "esperado": "Los duplicados quedan vinculados al original y todos los reportantes se conservan.",
     "nodo": "test_pf13_duplicados",
     "resultado": "APROBADA"
   },
@@ -5572,7 +5598,7 @@
         },
         "estado": 200,
         "respuesta": {
-          "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2IiwiZXhwIjoxNzk1MTI3NzM2fQ.NqNKRQ5dZBFAuzX21R1WllKhXXTaMWz6JGqyQ1L-SZ8",
+          "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2IiwiZXhwIjoxNzk1MTU0NDM4fQ.ejcQ-v8Un67Rp1zYRjGV4-Y5mo1vb14AFqPKc6_pL5I",
           "token_type": "bearer",
           "usuario": {
             "id": 6,
@@ -5621,6 +5647,8 @@
         }
       }
     ],
+    "previo": "BD vacía de reportes con edificio «Bloque A», 3 espacios y una cuenta por perfil (coordinación, 2 técnicos, docente, administrativo), todas con sesión iniciada.",
+    "esperado": "Registro HTTP 201 (rol reportante, sin devolver la contraseña); correo repetido 409; contraseña débil 422; login incorrecto 401; login correcto 200; token falso 401.",
     "nodo": "test_pf14_autenticacion",
     "resultado": "APROBADA"
   },
@@ -5662,7 +5690,7 @@
           "estado": "reportado",
           "prioridad": null,
           "duplicado_de_id": null,
-          "creado_en": "2026-11-19T14:35:36.589365",
+          "creado_en": "2026-11-19T22:00:38.781383",
           "creador": {
             "id": 4,
             "nombre": "Docente Prueba",
@@ -5690,7 +5718,7 @@
                 "nombre": "Docente Prueba"
               },
               "comentario": "Reporte registrado",
-              "fecha": "2026-11-19T14:35:36.590500"
+              "fecha": "2026-11-19T22:00:38.782271"
             }
           ],
           "valoraciones": [],
@@ -5729,7 +5757,7 @@
           "estado": "evaluado",
           "prioridad": "alta",
           "duplicado_de_id": null,
-          "creado_en": "2026-11-19T14:35:36.589365",
+          "creado_en": "2026-11-19T22:00:38.781383",
           "creador": {
             "id": 4,
             "nombre": "Docente Prueba",
@@ -5757,7 +5785,7 @@
                 "nombre": "Docente Prueba"
               },
               "comentario": "Reporte registrado",
-              "fecha": "2026-11-19T14:35:36.590500"
+              "fecha": "2026-11-19T22:00:38.782271"
             },
             {
               "id": 2,
@@ -5768,7 +5796,7 @@
                 "nombre": "Coordinación Prueba"
               },
               "comentario": "Aceptado con prioridad alta",
-              "fecha": "2026-11-19T14:35:36.631166"
+              "fecha": "2026-11-19T22:00:38.812205"
             }
           ],
           "valoraciones": [],
@@ -5782,7 +5810,7 @@
                 "cargo": "docente"
               },
               "reporte_id": 1,
-              "fecha_reporte": "2026-11-19T14:35:36.589365",
+              "fecha_reporte": "2026-11-19T22:00:38.781383",
               "es_reporte_original": true
             }
           ],
@@ -5808,7 +5836,7 @@
           "rol": "responsable",
           "activa": true,
           "motivo": null,
-          "fecha_asignacion": "2026-11-19T14:35:36.655757",
+          "fecha_asignacion": "2026-11-19T22:00:38.829784",
           "fecha_retiro": null,
           "motivo_retiro": null
         }
@@ -5835,7 +5863,7 @@
           "actividades": "Cambio de la lámpara y revisión del circuito",
           "tiempo_minutos": 45,
           "resultado": "Iluminación restablecida",
-          "registrado_en": "2026-11-19T14:35:36.674460"
+          "registrado_en": "2026-11-19T22:00:38.841964"
         }
       },
       {
@@ -5868,7 +5896,7 @@
           "estado": "en_verificacion",
           "prioridad": "alta",
           "duplicado_de_id": null,
-          "creado_en": "2026-11-19T14:35:36.589365",
+          "creado_en": "2026-11-19T22:00:38.781383",
           "creador": {
             "id": 4,
             "nombre": "Docente Prueba",
@@ -5894,7 +5922,7 @@
               "rol": "responsable",
               "activa": true,
               "motivo": null,
-              "fecha_asignacion": "2026-11-19T14:35:36.655757",
+              "fecha_asignacion": "2026-11-19T22:00:38.829784",
               "fecha_retiro": null,
               "motivo_retiro": null
             }
@@ -5910,7 +5938,7 @@
               "actividades": "Cambio de la lámpara y revisión del circuito",
               "tiempo_minutos": 45,
               "resultado": "Iluminación restablecida",
-              "registrado_en": "2026-11-19T14:35:36.674460"
+              "registrado_en": "2026-11-19T22:00:38.841964"
             }
           ],
           "historial": [
@@ -5923,7 +5951,7 @@
                 "nombre": "Docente Prueba"
               },
               "comentario": "Reporte registrado",
-              "fecha": "2026-11-19T14:35:36.590500"
+              "fecha": "2026-11-19T22:00:38.782271"
             },
             {
               "id": 2,
@@ -5934,7 +5962,7 @@
                 "nombre": "Coordinación Prueba"
               },
               "comentario": "Aceptado con prioridad alta",
-              "fecha": "2026-11-19T14:35:36.631166"
+              "fecha": "2026-11-19T22:00:38.812205"
             },
             {
               "id": 3,
@@ -5945,7 +5973,7 @@
                 "nombre": "Coordinación Prueba"
               },
               "comentario": "Asignado a Técnico Uno",
-              "fecha": "2026-11-19T14:35:36.656089"
+              "fecha": "2026-11-19T22:00:38.830021"
             },
             {
               "id": 4,
@@ -5956,7 +5984,7 @@
                 "nombre": "Técnico Uno"
               },
               "comentario": "Primera intervención registrada",
-              "fecha": "2026-11-19T14:35:36.673829"
+              "fecha": "2026-11-19T22:00:38.841526"
             },
             {
               "id": 5,
@@ -5967,7 +5995,7 @@
                 "nombre": "Técnico Uno"
               },
               "comentario": "Trabajo finalizado (resuelto); pendiente de verificación",
-              "fecha": "2026-11-19T14:35:36.690851"
+              "fecha": "2026-11-19T22:00:38.852925"
             }
           ],
           "valoraciones": [],
@@ -5981,7 +6009,7 @@
                 "cargo": "docente"
               },
               "reporte_id": 1,
-              "fecha_reporte": "2026-11-19T14:35:36.589365",
+              "fecha_reporte": "2026-11-19T22:00:38.781383",
               "es_reporte_original": true
             }
           ],
@@ -6053,7 +6081,7 @@
           "estado": "en_atencion",
           "prioridad": "alta",
           "duplicado_de_id": null,
-          "creado_en": "2026-11-19T14:35:36.589365",
+          "creado_en": "2026-11-19T22:00:38.781383",
           "creador": {
             "id": 4,
             "nombre": "Docente Prueba",
@@ -6079,7 +6107,7 @@
               "rol": "responsable",
               "activa": true,
               "motivo": null,
-              "fecha_asignacion": "2026-11-19T14:35:36.655757",
+              "fecha_asignacion": "2026-11-19T22:00:38.829784",
               "fecha_retiro": null,
               "motivo_retiro": null
             }
@@ -6095,7 +6123,7 @@
               "actividades": "Cambio de la lámpara y revisión del circuito",
               "tiempo_minutos": 45,
               "resultado": "Iluminación restablecida",
-              "registrado_en": "2026-11-19T14:35:36.674460"
+              "registrado_en": "2026-11-19T22:00:38.841964"
             }
           ],
           "historial": [
@@ -6108,7 +6136,7 @@
                 "nombre": "Docente Prueba"
               },
               "comentario": "Reporte registrado",
-              "fecha": "2026-11-19T14:35:36.590500"
+              "fecha": "2026-11-19T22:00:38.782271"
             },
             {
               "id": 2,
@@ -6119,7 +6147,7 @@
                 "nombre": "Coordinación Prueba"
               },
               "comentario": "Aceptado con prioridad alta",
-              "fecha": "2026-11-19T14:35:36.631166"
+              "fecha": "2026-11-19T22:00:38.812205"
             },
             {
               "id": 3,
@@ -6130,7 +6158,7 @@
                 "nombre": "Coordinación Prueba"
               },
               "comentario": "Asignado a Técnico Uno",
-              "fecha": "2026-11-19T14:35:36.656089"
+              "fecha": "2026-11-19T22:00:38.830021"
             },
             {
               "id": 4,
@@ -6141,7 +6169,7 @@
                 "nombre": "Técnico Uno"
               },
               "comentario": "Primera intervención registrada",
-              "fecha": "2026-11-19T14:35:36.673829"
+              "fecha": "2026-11-19T22:00:38.841526"
             },
             {
               "id": 5,
@@ -6152,7 +6180,7 @@
                 "nombre": "Técnico Uno"
               },
               "comentario": "Trabajo finalizado (resuelto); pendiente de verificación",
-              "fecha": "2026-11-19T14:35:36.690851"
+              "fecha": "2026-11-19T22:00:38.852925"
             },
             {
               "id": 6,
@@ -6163,7 +6191,7 @@
                 "nombre": "Coordinación Prueba"
               },
               "comentario": "Verificación no aprobada: La lámpara sigue parpadeando",
-              "fecha": "2026-11-19T14:35:36.731346"
+              "fecha": "2026-11-19T22:00:38.880746"
             }
           ],
           "valoraciones": [],
@@ -6177,7 +6205,7 @@
                 "cargo": "docente"
               },
               "reporte_id": 1,
-              "fecha_reporte": "2026-11-19T14:35:36.589365",
+              "fecha_reporte": "2026-11-19T22:00:38.781383",
               "es_reporte_original": true
             }
           ],
@@ -6217,7 +6245,7 @@
           "estado": "reportado",
           "prioridad": null,
           "duplicado_de_id": null,
-          "creado_en": "2026-11-19T14:35:36.748785",
+          "creado_en": "2026-11-19T22:00:38.892955",
           "creador": {
             "id": 4,
             "nombre": "Docente Prueba",
@@ -6245,7 +6273,7 @@
                 "nombre": "Docente Prueba"
               },
               "comentario": "Reporte registrado",
-              "fecha": "2026-11-19T14:35:36.749362"
+              "fecha": "2026-11-19T22:00:38.893372"
             }
           ],
           "valoraciones": [],
@@ -6284,7 +6312,7 @@
           "estado": "evaluado",
           "prioridad": "baja",
           "duplicado_de_id": null,
-          "creado_en": "2026-11-19T14:35:36.748785",
+          "creado_en": "2026-11-19T22:00:38.892955",
           "creador": {
             "id": 4,
             "nombre": "Docente Prueba",
@@ -6312,7 +6340,7 @@
                 "nombre": "Docente Prueba"
               },
               "comentario": "Reporte registrado",
-              "fecha": "2026-11-19T14:35:36.749362"
+              "fecha": "2026-11-19T22:00:38.893372"
             },
             {
               "id": 8,
@@ -6323,7 +6351,7 @@
                 "nombre": "Coordinación Prueba"
               },
               "comentario": "Aceptado con prioridad baja",
-              "fecha": "2026-11-19T14:35:36.766616"
+              "fecha": "2026-11-19T22:00:38.905940"
             }
           ],
           "valoraciones": [],
@@ -6337,7 +6365,7 @@
                 "cargo": "docente"
               },
               "reporte_id": 2,
-              "fecha_reporte": "2026-11-19T14:35:36.748785",
+              "fecha_reporte": "2026-11-19T22:00:38.892955",
               "es_reporte_original": true
             }
           ],
@@ -6363,7 +6391,7 @@
           "rol": "responsable",
           "activa": true,
           "motivo": null,
-          "fecha_asignacion": "2026-11-19T14:35:36.784244",
+          "fecha_asignacion": "2026-11-19T22:00:38.918671",
           "fecha_retiro": null,
           "motivo_retiro": null
         }
@@ -6390,7 +6418,7 @@
           "actividades": "Cambio de la lámpara y revisión del circuito",
           "tiempo_minutos": 45,
           "resultado": "Iluminación restablecida",
-          "registrado_en": "2026-11-19T14:35:36.800148"
+          "registrado_en": "2026-11-19T22:00:38.931920"
         }
       },
       {
@@ -6445,7 +6473,7 @@
           "estado": "en_verificacion",
           "prioridad": "baja",
           "duplicado_de_id": null,
-          "creado_en": "2026-11-19T14:35:36.748785",
+          "creado_en": "2026-11-19T22:00:38.892955",
           "creador": {
             "id": 4,
             "nombre": "Docente Prueba",
@@ -6471,7 +6499,7 @@
               "rol": "responsable",
               "activa": true,
               "motivo": null,
-              "fecha_asignacion": "2026-11-19T14:35:36.784244",
+              "fecha_asignacion": "2026-11-19T22:00:38.918671",
               "fecha_retiro": null,
               "motivo_retiro": null
             }
@@ -6487,7 +6515,7 @@
               "actividades": "Cambio de la lámpara y revisión del circuito",
               "tiempo_minutos": 45,
               "resultado": "Iluminación restablecida",
-              "registrado_en": "2026-11-19T14:35:36.800148"
+              "registrado_en": "2026-11-19T22:00:38.931920"
             }
           ],
           "historial": [
@@ -6500,7 +6528,7 @@
                 "nombre": "Docente Prueba"
               },
               "comentario": "Reporte registrado",
-              "fecha": "2026-11-19T14:35:36.749362"
+              "fecha": "2026-11-19T22:00:38.893372"
             },
             {
               "id": 8,
@@ -6511,7 +6539,7 @@
                 "nombre": "Coordinación Prueba"
               },
               "comentario": "Aceptado con prioridad baja",
-              "fecha": "2026-11-19T14:35:36.766616"
+              "fecha": "2026-11-19T22:00:38.905940"
             },
             {
               "id": 9,
@@ -6522,7 +6550,7 @@
                 "nombre": "Coordinación Prueba"
               },
               "comentario": "Asignado a Técnico Uno",
-              "fecha": "2026-11-19T14:35:36.784453"
+              "fecha": "2026-11-19T22:00:38.918889"
             },
             {
               "id": 10,
@@ -6533,7 +6561,7 @@
                 "nombre": "Técnico Uno"
               },
               "comentario": "Primera intervención registrada",
-              "fecha": "2026-11-19T14:35:36.799957"
+              "fecha": "2026-11-19T22:00:38.931773"
             },
             {
               "id": 11,
@@ -6544,7 +6572,7 @@
                 "nombre": "Técnico Uno"
               },
               "comentario": "Trabajo finalizado (requiere_tercero); pendiente de verificación",
-              "fecha": "2026-11-19T14:35:36.826551"
+              "fecha": "2026-11-19T22:00:38.951899"
             }
           ],
           "valoraciones": [],
@@ -6558,7 +6586,7 @@
                 "cargo": "docente"
               },
               "reporte_id": 2,
-              "fecha_reporte": "2026-11-19T14:35:36.748785",
+              "fecha_reporte": "2026-11-19T22:00:38.892955",
               "es_reporte_original": true
             }
           ],
@@ -6595,7 +6623,7 @@
           "estado": "cerrado",
           "prioridad": "baja",
           "duplicado_de_id": null,
-          "creado_en": "2026-11-19T14:35:36.748785",
+          "creado_en": "2026-11-19T22:00:38.892955",
           "creador": {
             "id": 4,
             "nombre": "Docente Prueba",
@@ -6609,7 +6637,7 @@
           "resultado_cierre": "requiere_tercero",
           "descripcion_solucion": "Se requiere proveedor externo",
           "motivo_cierre": "Equipo bajo garantía del fabricante",
-          "fecha_cierre": "2026-11-19T14:35:36.842708",
+          "fecha_cierre": "2026-11-19T22:00:38.964688",
           "fotos": [],
           "asignaciones": [
             {
@@ -6621,7 +6649,7 @@
               "rol": "responsable",
               "activa": true,
               "motivo": null,
-              "fecha_asignacion": "2026-11-19T14:35:36.784244",
+              "fecha_asignacion": "2026-11-19T22:00:38.918671",
               "fecha_retiro": null,
               "motivo_retiro": null
             }
@@ -6637,7 +6665,7 @@
               "actividades": "Cambio de la lámpara y revisión del circuito",
               "tiempo_minutos": 45,
               "resultado": "Iluminación restablecida",
-              "registrado_en": "2026-11-19T14:35:36.800148"
+              "registrado_en": "2026-11-19T22:00:38.931920"
             }
           ],
           "historial": [
@@ -6650,7 +6678,7 @@
                 "nombre": "Docente Prueba"
               },
               "comentario": "Reporte registrado",
-              "fecha": "2026-11-19T14:35:36.749362"
+              "fecha": "2026-11-19T22:00:38.893372"
             },
             {
               "id": 8,
@@ -6661,7 +6689,7 @@
                 "nombre": "Coordinación Prueba"
               },
               "comentario": "Aceptado con prioridad baja",
-              "fecha": "2026-11-19T14:35:36.766616"
+              "fecha": "2026-11-19T22:00:38.905940"
             },
             {
               "id": 9,
@@ -6672,7 +6700,7 @@
                 "nombre": "Coordinación Prueba"
               },
               "comentario": "Asignado a Técnico Uno",
-              "fecha": "2026-11-19T14:35:36.784453"
+              "fecha": "2026-11-19T22:00:38.918889"
             },
             {
               "id": 10,
@@ -6683,7 +6711,7 @@
                 "nombre": "Técnico Uno"
               },
               "comentario": "Primera intervención registrada",
-              "fecha": "2026-11-19T14:35:36.799957"
+              "fecha": "2026-11-19T22:00:38.931773"
             },
             {
               "id": 11,
@@ -6694,7 +6722,7 @@
                 "nombre": "Técnico Uno"
               },
               "comentario": "Trabajo finalizado (requiere_tercero); pendiente de verificación",
-              "fecha": "2026-11-19T14:35:36.826551"
+              "fecha": "2026-11-19T22:00:38.951899"
             },
             {
               "id": 12,
@@ -6705,7 +6733,7 @@
                 "nombre": "Coordinación Prueba"
               },
               "comentario": "Cierre verificado",
-              "fecha": "2026-11-19T14:35:36.844413"
+              "fecha": "2026-11-19T22:00:38.966639"
             }
           ],
           "valoraciones": [],
@@ -6719,7 +6747,7 @@
                 "cargo": "docente"
               },
               "reporte_id": 2,
-              "fecha_reporte": "2026-11-19T14:35:36.748785",
+              "fecha_reporte": "2026-11-19T22:00:38.892955",
               "es_reporte_original": true
             }
           ],
@@ -6728,6 +6756,8 @@
         }
       }
     ],
+    "previo": "BD vacía de reportes con edificio «Bloque A», 3 espacios y una cuenta por perfil (coordinación, 2 técnicos, docente, administrativo), todas con sesión iniciada + reporte «en verificación».",
+    "esperado": "Si coordinación rechaza el cierre, el reporte vuelve a «en atención».",
     "nodo": "test_pf15_verificacion_rechazada",
     "resultado": "APROBADA"
   },
@@ -6769,7 +6799,7 @@
           "estado": "reportado",
           "prioridad": null,
           "duplicado_de_id": null,
-          "creado_en": "2026-11-19T14:35:36.977839",
+          "creado_en": "2026-11-19T22:00:39.059345",
           "creador": {
             "id": 4,
             "nombre": "Docente Prueba",
@@ -6797,7 +6827,7 @@
                 "nombre": "Docente Prueba"
               },
               "comentario": "Reporte registrado",
-              "fecha": "2026-11-19T14:35:36.979263"
+              "fecha": "2026-11-19T22:00:39.060158"
             }
           ],
           "valoraciones": [],
@@ -6836,7 +6866,7 @@
           "estado": "evaluado",
           "prioridad": "media",
           "duplicado_de_id": null,
-          "creado_en": "2026-11-19T14:35:36.977839",
+          "creado_en": "2026-11-19T22:00:39.059345",
           "creador": {
             "id": 4,
             "nombre": "Docente Prueba",
@@ -6864,7 +6894,7 @@
                 "nombre": "Docente Prueba"
               },
               "comentario": "Reporte registrado",
-              "fecha": "2026-11-19T14:35:36.979263"
+              "fecha": "2026-11-19T22:00:39.060158"
             },
             {
               "id": 2,
@@ -6875,7 +6905,7 @@
                 "nombre": "Coordinación Prueba"
               },
               "comentario": "Aceptado con prioridad media",
-              "fecha": "2026-11-19T14:35:37.024027"
+              "fecha": "2026-11-19T22:00:39.089890"
             }
           ],
           "valoraciones": [],
@@ -6889,7 +6919,7 @@
                 "cargo": "docente"
               },
               "reporte_id": 1,
-              "fecha_reporte": "2026-11-19T14:35:36.977839",
+              "fecha_reporte": "2026-11-19T22:00:39.059345",
               "es_reporte_original": true
             }
           ],
@@ -6915,7 +6945,7 @@
           "rol": "responsable",
           "activa": true,
           "motivo": null,
-          "fecha_asignacion": "2026-11-19T14:35:37.049324",
+          "fecha_asignacion": "2026-11-19T22:00:39.107666",
           "fecha_retiro": null,
           "motivo_retiro": null
         }
@@ -7030,7 +7060,7 @@
           "rol": "responsable",
           "activa": true,
           "motivo": "Mayor experiencia",
-          "fecha_asignacion": "2026-11-19T14:35:37.132724",
+          "fecha_asignacion": "2026-11-19T22:00:39.167973",
           "fecha_retiro": null,
           "motivo_retiro": null
         }
@@ -7062,7 +7092,7 @@
           "estado": "asignado",
           "prioridad": "media",
           "duplicado_de_id": null,
-          "creado_en": "2026-11-19T14:35:36.977839",
+          "creado_en": "2026-11-19T22:00:39.059345",
           "creador": {
             "id": 4,
             "nombre": "Docente Prueba",
@@ -7088,8 +7118,8 @@
               "rol": "responsable",
               "activa": false,
               "motivo": null,
-              "fecha_asignacion": "2026-11-19T14:35:37.049324",
-              "fecha_retiro": "2026-11-19T14:35:37.131414",
+              "fecha_asignacion": "2026-11-19T22:00:39.107666",
+              "fecha_retiro": "2026-11-19T22:00:39.166987",
               "motivo_retiro": "Reasignado: Mayor experiencia"
             },
             {
@@ -7101,7 +7131,7 @@
               "rol": "responsable",
               "activa": true,
               "motivo": "Mayor experiencia",
-              "fecha_asignacion": "2026-11-19T14:35:37.132724",
+              "fecha_asignacion": "2026-11-19T22:00:39.167973",
               "fecha_retiro": null,
               "motivo_retiro": null
             }
@@ -7117,7 +7147,7 @@
                 "nombre": "Docente Prueba"
               },
               "comentario": "Reporte registrado",
-              "fecha": "2026-11-19T14:35:36.979263"
+              "fecha": "2026-11-19T22:00:39.060158"
             },
             {
               "id": 2,
@@ -7128,7 +7158,7 @@
                 "nombre": "Coordinación Prueba"
               },
               "comentario": "Aceptado con prioridad media",
-              "fecha": "2026-11-19T14:35:37.024027"
+              "fecha": "2026-11-19T22:00:39.089890"
             },
             {
               "id": 3,
@@ -7139,7 +7169,7 @@
                 "nombre": "Coordinación Prueba"
               },
               "comentario": "Asignado a Técnico Uno",
-              "fecha": "2026-11-19T14:35:37.049669"
+              "fecha": "2026-11-19T22:00:39.107899"
             }
           ],
           "valoraciones": [],
@@ -7153,7 +7183,7 @@
                 "cargo": "docente"
               },
               "reporte_id": 1,
-              "fecha_reporte": "2026-11-19T14:35:36.977839",
+              "fecha_reporte": "2026-11-19T22:00:39.059345",
               "es_reporte_original": true
             }
           ],
@@ -7188,6 +7218,8 @@
         }
       }
     ],
+    "previo": "BD vacía de reportes con edificio «Bloque A», 3 espacios y una cuenta por perfil (coordinación, 2 técnicos, docente, administrativo), todas con sesión iniciada + reporte asignado.",
+    "esperado": "Reasignar sin motivo HTTP 422; con motivo se conserva el historial; un técnico no disponible se rechaza.",
     "nodo": "test_pf16_reasignacion",
     "resultado": "APROBADA"
   },
@@ -7229,7 +7261,7 @@
           "estado": "reportado",
           "prioridad": null,
           "duplicado_de_id": null,
-          "creado_en": "2026-11-19T14:35:37.303827",
+          "creado_en": "2026-11-19T22:00:39.288865",
           "creador": {
             "id": 4,
             "nombre": "Docente Prueba",
@@ -7257,7 +7289,7 @@
                 "nombre": "Docente Prueba"
               },
               "comentario": "Reporte registrado",
-              "fecha": "2026-11-19T14:35:37.305019"
+              "fecha": "2026-11-19T22:00:39.289820"
             }
           ],
           "valoraciones": [],
@@ -7298,7 +7330,7 @@
           "estado": "reportado",
           "prioridad": null,
           "duplicado_de_id": null,
-          "creado_en": "2026-11-19T14:35:37.339145",
+          "creado_en": "2026-11-19T22:00:39.313368",
           "creador": {
             "id": 5,
             "nombre": "Administrativo Prueba",
@@ -7326,7 +7358,7 @@
                 "nombre": "Administrativo Prueba"
               },
               "comentario": "Reporte registrado",
-              "fecha": "2026-11-19T14:35:37.339776"
+              "fecha": "2026-11-19T22:00:39.313784"
             }
           ],
           "valoraciones": [],
@@ -7363,7 +7395,7 @@
             "estado": "reportado",
             "prioridad": null,
             "duplicado_de_id": null,
-            "creado_en": "2026-11-19T14:35:37.303827",
+            "creado_en": "2026-11-19T22:00:39.288865",
             "creador": {
               "id": 4,
               "nombre": "Docente Prueba"
@@ -7424,7 +7456,7 @@
             "estado": "reportado",
             "prioridad": null,
             "duplicado_de_id": null,
-            "creado_en": "2026-11-19T14:35:37.339145",
+            "creado_en": "2026-11-19T22:00:39.313368",
             "creador": {
               "id": 5,
               "nombre": "Administrativo Prueba"
@@ -7451,7 +7483,7 @@
             "estado": "reportado",
             "prioridad": null,
             "duplicado_de_id": null,
-            "creado_en": "2026-11-19T14:35:37.303827",
+            "creado_en": "2026-11-19T22:00:39.288865",
             "creador": {
               "id": 4,
               "nombre": "Docente Prueba"
@@ -7461,6 +7493,8 @@
         ]
       }
     ],
+    "previo": "BD vacía de reportes con edificio «Bloque A», 3 espacios y una cuenta por perfil (coordinación, 2 técnicos, docente, administrativo), todas con sesión iniciada + un reporte del docente y otro del administrativo.",
+    "esperado": "El docente ve solo el suyo (200) y recibe 403 al abrir el ajeno o su historial; coordinación ve ambos.",
     "nodo": "test_pf17_visibilidad_por_perfil",
     "resultado": "APROBADA"
   },
@@ -7502,7 +7536,7 @@
           "estado": "reportado",
           "prioridad": null,
           "duplicado_de_id": null,
-          "creado_en": "2026-11-19T14:35:37.535042",
+          "creado_en": "2026-11-19T22:00:39.449732",
           "creador": {
             "id": 4,
             "nombre": "Docente Prueba",
@@ -7530,7 +7564,7 @@
                 "nombre": "Docente Prueba"
               },
               "comentario": "Reporte registrado",
-              "fecha": "2026-11-19T14:35:37.537076"
+              "fecha": "2026-11-19T22:00:39.450576"
             }
           ],
           "valoraciones": [],
@@ -7551,7 +7585,7 @@
           "nombre_original": "foto.jpg",
           "tipo_contenido": "image/jpeg",
           "tamano_bytes": 36,
-          "subido_en": "2026-11-19T14:35:37.578715"
+          "subido_en": "2026-11-19T22:00:39.481674"
         }
       },
       {
@@ -7617,7 +7651,7 @@
           "estado": "reportado",
           "prioridad": null,
           "duplicado_de_id": null,
-          "creado_en": "2026-11-19T14:35:37.535042",
+          "creado_en": "2026-11-19T22:00:39.449732",
           "creador": {
             "id": 4,
             "nombre": "Docente Prueba",
@@ -7638,7 +7672,7 @@
               "nombre_original": "foto.jpg",
               "tipo_contenido": "image/jpeg",
               "tamano_bytes": 36,
-              "subido_en": "2026-11-19T14:35:37.578715"
+              "subido_en": "2026-11-19T22:00:39.481674"
             }
           ],
           "asignaciones": [],
@@ -7653,7 +7687,7 @@
                 "nombre": "Docente Prueba"
               },
               "comentario": "Reporte registrado",
-              "fecha": "2026-11-19T14:35:37.537076"
+              "fecha": "2026-11-19T22:00:39.450576"
             }
           ],
           "valoraciones": [],
@@ -7663,6 +7697,8 @@
         }
       }
     ],
+    "previo": "BD vacía de reportes con edificio «Bloque A», 3 espacios y una cuenta por perfil (coordinación, 2 técnicos, docente, administrativo), todas con sesión iniciada + reporte del docente.",
+    "esperado": "JPG válido HTTP 201; ejecutable y falso PNG HTTP 422; otro reportante HTTP 403; el reporte conserva 1 foto.",
     "nodo": "test_pf18_fotografias",
     "resultado": "APROBADA"
   },
@@ -7870,6 +7906,8 @@
         }
       }
     ],
+    "previo": "BD vacía de reportes con edificio «Bloque A», 3 espacios y una cuenta por perfil (coordinación, 2 técnicos, docente, administrativo), todas con sesión iniciada.",
+    "esperado": "Un reportante lista espacios (200) pero crear da 403; coordinación crea (201) y un nombre repetido en el mismo edificio da 409.",
     "nodo": "test_pf19_catalogo_de_espacios",
     "resultado": "APROBADA"
   }

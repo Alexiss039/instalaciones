@@ -335,14 +335,14 @@ class VerificarEntrada(BaseModel):
         return self
 
 
-# ---------------------------------------------------------------- Consolidado
+# ---------------------------------------------------------------- Dashboard
 class Conteo(BaseModel):
     clave: str
     etiqueta: str
     total: int
 
 
-class ResumenConsolidado(BaseModel):
+class ResumenDashboard(BaseModel):
     desde: date | None
     hasta: date | None
     total_reportes: int
