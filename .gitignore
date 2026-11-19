@@ -8,8 +8,10 @@ __pycache__/
 # Variables locales y secretos
 .env
 
-# Base de datos y archivos subidos en local
+# Base de datos local: cada persona crea la suya con `python -m app.seed`
 *.db
+
+# Fotos subidas en local: dependen de la base de datos, que tampoco se sube (se conserva solo .gitkeep)
 backend/uploads/*
 !backend/uploads/.gitkeep
 

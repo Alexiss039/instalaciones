@@ -123,7 +123,7 @@ def test_pf08_usuario_no_autorizado(cliente, datos):
     assert cliente.post(f"/reportes/{rid}/evaluacion", json=evaluacion).status_code == 401
     asignacion = {"tecnico_id": datos.ids["tec1"]}
     assert cliente.post(f"/reportes/{rid}/asignaciones", headers=datos.h.tec1, json=asignacion).status_code == 403
-    assert cliente.get("/consolidado/resumen", headers=datos.h.doc).status_code == 403
+    assert cliente.get("/dashboard/resumen", headers=datos.h.doc).status_code == 403
     assert cliente.get("/usuarios", headers=datos.h.tec1).status_code == 403
     detalle = cliente.get(f"/reportes/{rid}", headers=datos.h.coord).json()
     assert detalle["estado"] == "reportado" and detalle["prioridad"] is None and detalle["asignaciones"] == []
@@ -170,16 +170,16 @@ def test_pf10_cerrar_reporte(cliente, datos):
     assert cliente.post(f"/reportes/{rid}/finalizar", headers=datos.h.tec1, json=FINALIZAR).status_code == 409
 
 
-@prueba("PF-11", "Consultar información consolidada con conteos y filtros coherentes",
+@prueba("PF-11", "Consultar el dashboard con conteos y filtros coherentes",
         requisito="RF-12", ca="CA-06")
-def test_pf11_consolidado(cliente, datos):
+def test_pf11_dashboard(cliente, datos):
     a = crear_reporte(cliente, datos, tipo_falla="electrica")
     crear_reporte(cliente, datos, "adm", espacio=datos.lab, tipo_falla="electrica")
     crear_reporte(cliente, datos, espacio=datos.aula, tipo_falla="plomeria")
     evaluar_aceptar(cliente, datos, a)
     asignar(cliente, datos, a)
     intervenir(cliente, datos, a)
-    resumen = cliente.get("/consolidado/resumen", headers=datos.h.coord)
+    resumen = cliente.get("/dashboard/resumen", headers=datos.h.coord)
     assert resumen.status_code == 200
     r = resumen.json()
     assert r["total_reportes"] == 3
@@ -188,13 +188,13 @@ def test_pf11_consolidado(cliente, datos):
     assert r["espacios_afectados"][0]["etiqueta"] == "Bloque A - Aula 101" and r["espacios_afectados"][0]["total"] == 2
     assert r["por_responsable"] == [{"clave": str(datos.ids["tec1"]), "etiqueta": "Técnico Uno", "total": 1}]
     # filtros por fecha
-    hoy = cliente.get("/consolidado/resumen", headers=datos.h.coord, params={"desde": HOY, "hasta": HOY}).json()
+    hoy = cliente.get("/dashboard/resumen", headers=datos.h.coord, params={"desde": HOY, "hasta": HOY}).json()
     assert hoy["total_reportes"] == 3
     futuro = (date.today() + timedelta(days=5)).isoformat()
-    assert cliente.get("/consolidado/resumen", headers=datos.h.coord, params={"desde": futuro}).json()["total_reportes"] == 0
-    assert cliente.get("/consolidado/resumen", headers=datos.h.coord,
+    assert cliente.get("/dashboard/resumen", headers=datos.h.coord, params={"desde": futuro}).json()["total_reportes"] == 0
+    assert cliente.get("/dashboard/resumen", headers=datos.h.coord,
                        params={"desde": futuro, "hasta": HOY}).status_code == 422
-    # el listado filtrado coincide con el consolidado
+    # el listado filtrado coincide con el dashboard
     filtrado = cliente.get("/reportes", headers=datos.h.coord, params={"grupo": "pendiente", "tipo_falla": "electrica"})
     assert len(filtrado.json()) == 1
 
@@ -226,7 +226,7 @@ def test_pf12_flujo_completo(cliente, datos):
     assert visto["estado"] == "cerrado" and len(visto["fotos"]) == 1
     descarga = cliente.get(f"/reportes/{rid}/fotos/{foto.json()['id']}", headers=datos.h.coord)
     assert descarga.status_code == 200 and descarga.content == png
-    r = cliente.get("/consolidado/resumen", headers=datos.h.coord).json()
+    r = cliente.get("/dashboard/resumen", headers=datos.h.coord).json()
     assert r["por_grupo"] == [{"clave": "finalizado", "etiqueta": "finalizado", "total": 1}]
     assert r["por_resultado_cierre"][0]["clave"] == "resuelto"
 
@@ -254,8 +254,8 @@ def test_pf13_duplicados(cliente, datos):
     # quien reportó el duplicado puede seguir el avance del caso original
     suyo = cliente.get(f"/reportes/{repetido}", headers=datos.h.adm).json()
     assert suyo["estado_reporte_original"] == "evaluado" and suyo["reportantes"] == []
-    # el original no cuenta dos veces en el consolidado de pendientes
-    assert cliente.get("/consolidado/resumen", headers=datos.h.coord).json()["por_grupo"][0]["total"] == 1
+    # el original no cuenta dos veces en el dashboard de pendientes
+    assert cliente.get("/dashboard/resumen", headers=datos.h.coord).json()["por_grupo"][0]["total"] == 1
 
 
 @prueba("PF-14", "Autenticación: registro, credenciales incorrectas y correo repetido",

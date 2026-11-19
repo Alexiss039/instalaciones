@@ -1,4 +1,4 @@
-"""Información consolidada para coordinación, con filtro por fechas."""
+"""Dashboard para coordinación: reportes por estado, fallas frecuentes, espacios y responsables, con filtro por fechas."""
 from datetime import date
 
 from fastapi import APIRouter, Depends
@@ -8,13 +8,13 @@ from sqlalchemy.orm import Session
 from ..dependencias import get_db, requiere_roles
 from ..enums import GRUPO_DE_ESTADO, EstadoReporte, Rol
 from ..models import Asignacion, Edificio, Espacio, Reporte, Usuario
-from ..schemas import Conteo, ResumenConsolidado
+from ..schemas import Conteo, ResumenDashboard
 from ..servicios import condiciones_fecha
 
-router = APIRouter(prefix="/consolidado", tags=["Consolidado"])
+router = APIRouter(prefix="/dashboard", tags=["Dashboard"])
 
 
-@router.get("/resumen", response_model=ResumenConsolidado,
+@router.get("/resumen", response_model=ResumenDashboard,
             summary="Reportes por estado, fallas más frecuentes, espacios afectados y responsables")
 def resumen(desde: date | None = None, hasta: date | None = None, db: Session = Depends(get_db),
             _=Depends(requiere_roles(Rol.COORDINACION))):
@@ -50,7 +50,7 @@ def resumen(desde: date | None = None, hasta: date | None = None, db: Session = 
 
     resultados = agrupar(Reporte.resultado_cierre, filtros=(Reporte.resultado_cierre.is_not(None),))
 
-    return ResumenConsolidado(
+    return ResumenDashboard(
         desde=desde, hasta=hasta, total_reportes=sum(t for _, t in por_estado),
         por_grupo=[Conteo(clave=g, etiqueta=g, total=t) for g, t in totales_grupo.items()],
         por_estado=[Conteo(clave=e.value, etiqueta=e.value, total=t) for e, t in por_estado],

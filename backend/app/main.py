@@ -8,7 +8,7 @@ from fastapi.staticfiles import StaticFiles
 
 from .database import crear_tablas
 from .errores import registrar_manejadores
-from .routers import auth, consolidado, espacios, reportes, usuarios
+from .routers import auth, dashboard, espacios, reportes, usuarios
 
 
 @asynccontextmanager
@@ -33,7 +33,7 @@ app.add_middleware(
 )
 registrar_manejadores(app)
 
-for modulo in (auth, usuarios, espacios, reportes, consolidado):
+for modulo in (auth, usuarios, espacios, reportes, dashboard):
     app.include_router(modulo.router)
 
 

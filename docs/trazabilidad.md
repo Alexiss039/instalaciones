@@ -4,17 +4,17 @@ Relaciona cada criterio de aceptación (CA) con su requisito, la implementación
 que lo verifica. Las pruebas están en `backend/tests/test_api.py`; su evidencia, en
 [`evidencias/pruebas_api.md`](../evidencias/pruebas_api.md).
 
-> Las columnas **PR** se completan con el número real al abrir cada pull request en GitHub.
-> Las filas de interfaz quedan pendientes hasta construir el frontend.
+> Las columnas **PR** se completan con el número real al abrir cada pull request en GitHub
+> (backend: Brayan Espinoza; frontend: Emanuel Ortiz).
 
 | CA | Requisito | Implementación (backend) | Interfaz (frontend) | PR | Pruebas |
 |---|---|---|---|---|---|
-| **CA-01** Registrar y consultar una falla vinculada a un espacio | RF-02, RF-03, RF-04, RF-05 | `POST /reportes`, `GET /reportes`, `GET /reportes/{id}`, `POST /reportes/{id}/fotos`, `GET /espacios` · `routers/reportes.py`, `routers/espacios.py` | Pendiente | _PR backend_ | PF-01, PF-02, PF-03, PF-04, PF-17, PF-18, PF-19 |
-| **CA-02** Evaluar y gestionar; la decisión queda registrada y visible | RF-06, RF-07, RF-08 | `POST /reportes/{id}/evaluacion`, `POST /reportes/{id}/valoraciones`, `GET /reportes/{id}/historial` · `servicios.py` (transiciones) | Pendiente | _PR backend_ | PF-05, PF-06, PF-08, PF-13 |
-| **CA-03** Asignar responsable; persiste y es visible | RF-09 | `POST /reportes/{id}/asignaciones`, `GET /tecnicos` · `routers/reportes.py`, `routers/usuarios.py` | Pendiente | _PR backend_ | PF-07, PF-08, PF-16, PF-17 |
-| **CA-04** Registrar intervenciones con historial | RF-10 | `POST /reportes/{id}/intervenciones`, `GET /reportes/{id}/intervenciones` | Pendiente | _PR backend_ | PF-09, PF-12 |
-| **CA-05** Cerrar el servicio y conservar el resultado | RF-11, RF-08 | `POST /reportes/{id}/finalizar`, `POST /reportes/{id}/verificacion` | Pendiente | _PR backend_ | PF-10, PF-12, PF-15 |
-| **CA-06** Consolidado agrupado y filtrado | RF-12 | `GET /consolidado/resumen`, filtros de `GET /reportes` · `routers/consolidado.py` | Pendiente | _PR backend_ | PF-11, PF-12 |
+| **CA-01** Registrar y consultar una falla vinculada a un espacio | RF-02, RF-03, RF-04, RF-05 | `POST /reportes`, `GET /reportes`, `GET /reportes/{id}`, `POST /reportes/{id}/fotos`, `GET /espacios` · `routers/reportes.py`, `routers/espacios.py` | `vistas/nuevo.js` (formulario con fotos), `vistas/lista.js`, `vistas/detalle.js` | _PR backend_ / _PR frontend_ | PF-01, PF-02, PF-03, PF-04, PF-17, PF-18, PF-19 |
+| **CA-02** Evaluar y gestionar; la decisión queda registrada y visible | RF-06, RF-07, RF-08 | `POST /reportes/{id}/evaluacion`, `POST /reportes/{id}/valoraciones`, `GET /reportes/{id}/historial` · `servicios.py` (transiciones) | `vistas/detalle.js` (`formEvaluacion`, `formValoracion`) | _PR backend_ / _PR frontend_ | PF-05, PF-06, PF-08, PF-13 |
+| **CA-03** Asignar responsable; persiste y es visible | RF-09 | `POST /reportes/{id}/asignaciones`, `GET /tecnicos` · `routers/reportes.py`, `routers/usuarios.py` | `vistas/detalle.js` (`formAsignar`, retiro de apoyo) | _PR backend_ / _PR frontend_ | PF-07, PF-08, PF-16, PF-17 |
+| **CA-04** Registrar intervenciones con historial | RF-10 | `POST /reportes/{id}/intervenciones`, `GET /reportes/{id}/intervenciones` | `vistas/detalle.js` (`formIntervencion`, lista de intervenciones) | _PR backend_ / _PR frontend_ | PF-09, PF-12 |
+| **CA-05** Cerrar el servicio y conservar el resultado | RF-11, RF-08 | `POST /reportes/{id}/finalizar`, `POST /reportes/{id}/verificacion` | `vistas/detalle.js` (`formFinalizar`, `formVerificacion`, bloque de cierre) | _PR backend_ / _PR frontend_ | PF-10, PF-12, PF-15 |
+| **CA-06** Dashboard (información consolidada de la guía) agrupado y filtrado | RF-12 | `GET /dashboard/resumen`, filtros de `GET /reportes` · `routers/dashboard.py` | `vistas/dashboard.js`, filtros de `vistas/lista.js` | _PR backend_ / _PR frontend_ | PF-11, PF-12 |
 
 ## Requisitos transversales
 
@@ -42,7 +42,7 @@ que lo verifica. Las pruebas están en `backend/tests/test_api.py`; su evidencia
 | PF-08 | Usuario no autorizado bloqueado sin cambios | RNF-01 | CA-02, CA-03 | 401, 403 |
 | PF-09 | Registrar intervención válida e inválidas | RF-10 | CA-04 | 201, 403, 422 |
 | PF-10 | Cerrar reporte y consultar resultado con historial | RF-11, RF-08 | CA-05 | 200, 409 |
-| PF-11 | Consolidado con conteos y filtros | RF-12 | CA-06 | 200, 422 |
+| PF-11 | Dashboard con conteos y filtros | RF-12 | CA-06 | 200, 422 |
 | PF-12 | Flujo completo reporte → cierre (API) | RF-03 a RF-12 | CA-01 a CA-06 | 2xx |
 | PF-13 | Duplicados y conservación de reportantes | RF-07 | CA-02 | 200, 422 |
 | PF-14 | Registro, login y credenciales inválidas | RF-01, RNF-03 | CA-01 | 201, 401, 409, 422 |
@@ -52,5 +52,6 @@ que lo verifica. Las pruebas están en `backend/tests/test_api.py`; su evidencia
 | PF-18 | Fotografías: formatos y contenido | RF-04, RNF-02 | CA-01 | 201, 403, 422 |
 | PF-19 | Catálogo de espacios | RF-02 | CA-01 | 201, 403, 404, 409, 422 |
 
-> PF-12 se ejecuta aquí a nivel de API; la guía pide demostrar además el flujo interfaz → API → base de datos,
-> que se cubrirá con el frontend.
+> PF-12 se ejecuta a nivel de API (automatizado) y también desde la interfaz, siguiendo el guion de
+> [`evidencias/flujo_interfaz.md`](../evidencias/flujo_interfaz.md), que cubre el flujo interfaz → API → base de datos.
+> Las rutas `vistas/...` son de `frontend/js/`.

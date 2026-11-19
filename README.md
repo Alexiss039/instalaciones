@@ -3,7 +3,7 @@
 Aplicación web para reportar y atender fallas de infraestructura de una sede: interfaz, API REST (FastAPI)
 y base de datos relacional.
 
-> **Estado:** backend completo y probado. El frontend está pendiente (carpeta `frontend/`).
+> **Estado:** backend y frontend completos. Backend probado con 19 pruebas de API; flujo completo verificado desde la interfaz.
 
 ---
 
@@ -30,7 +30,7 @@ y base de datos relacional.
 **Actores:** reportante (docentes y administrativos), personal de mantenimiento y coordinación.
 
 **Alcance aprobado:** registro de fallas con fotografía, evaluación, gestión de duplicados, asignación de
-responsables, registro de intervenciones, cierre con verificación y consulta consolidada.
+responsables, registro de intervenciones, cierre con verificación y consulta del dashboard.
 **Fuera de alcance:** repuestos, compras, costos, sensores IoT, contratos, SMS/WhatsApp e integraciones.
 
 **Solución:** cada reporte recorre los estados `reportado → evaluado → asignado → en_atencion → cerrado`
@@ -51,11 +51,16 @@ modifica lo que le corresponde. Detalle en [`docs/requisitos.md`](docs/requisito
 Frontend (HTML/CSS/JS)  ──HTTP+JSON/JWT──►  API REST FastAPI  ──SQLAlchemy──►  SQLite
 ```
 
-Modelo de datos (10 tablas): `usuarios`, `edificios`, `espacios`, `reportes`, `fotos`, `historial_estados`,
+Modelo de datos (9 tablas): `usuarios`, `edificios`, `espacios`, `reportes`, `fotos`, `historial_estados`,
 `valoraciones_tecnicas`, `asignaciones`, `intervenciones`. El diagrama, los estados, los permisos y la
 justificación tecnológica están en [`docs/diseno.md`](docs/diseno.md).
 
-> Las capturas de la interfaz se agregan cuando el frontend esté implementado.
+**Interfaz:** aplicación de una página (HTML, CSS y JavaScript sin dependencias) servida por la propia API, con un
+menú distinto por perfil: el reportante registra y consulta sus fallas (con fotos); mantenimiento ve sus trabajos,
+registra intervenciones y finaliza; coordinación evalúa, asigna, verifica, administra espacios y usuarios y
+consulta el dashboard. Es responsive, siempre en tema claro, y usa un diseño de tarjetas de doble bisel con
+navegación flotante (detalle en [`docs/diseno.md`](docs/diseno.md)).. Las capturas están en
+[`evidencias/capturas/`](evidencias/capturas/).
 
 ## 5. Preparación del entorno
 
@@ -84,11 +89,11 @@ python -m app.seed
 
 | Perfil | Correo | Contraseña |
 |---|---|---|
-| Coordinación | coordinacion@demo.test | Demo1234 |
-| Mantenimiento (eléctrico) | tecnico.electrico@demo.test | Demo1234 |
-| Mantenimiento (general) | tecnico.general@demo.test | Demo1234 |
-| Reportante (docente) | docente@demo.test | Demo1234 |
-| Reportante (administrativo) | administrativo@demo.test | Demo1234 |
+| Coordinación | coordinacion@gmail.com | Demo1234 |
+| Mantenimiento (eléctrico) | tecnico.electrico@gmail.com | Demo1234 |
+| Mantenimiento (general) | tecnico.general@gmail.com | Demo1234 |
+| Reportante (docente) | docente@gmail.com | Demo1234 |
+| Reportante (administrativo) | administrativo@gmail.com | Demo1234 |
 
 **Ejecutar** (desde `backend/`):
 
@@ -97,7 +102,8 @@ uvicorn app.main:app --reload --port 8000
 ```
 
 - API y documentación interactiva: <http://localhost:8000/docs>
-- Frontend: se sirve desde la misma aplicación en <http://localhost:8000/> cuando exista la carpeta `frontend/`.
+- Interfaz web: <http://localhost:8000/> (el frontend de la carpeta `frontend/` lo sirve la misma aplicación; no requiere Node ni compilación).
+- Con la base recién sembrada, entre con cualquiera de las cuentas de la tabla anterior.
 
 **Ejecutar las pruebas** (desde `backend/`):
 
@@ -137,7 +143,7 @@ Todos los endpoints (salvo `/auth/registro`, `/auth/login` y `/salud`) requieren
 | GET | `/reportes/{id}/intervenciones` | Historial de intervenciones | según perfil | RF-10 |
 | POST | `/reportes/{id}/finalizar` | Informar fin del trabajo con resultado | responsable / coordinación | RF-11 |
 | POST | `/reportes/{id}/verificacion` | Aprobar o devolver el cierre | coordinación | RF-11 |
-| GET | `/consolidado/resumen` | Consolidado (`desde`, `hasta`) | coordinación | RF-12 |
+| GET | `/dashboard/resumen` | Dashboard (`desde`, `hasta`) | coordinación | RF-12 |
 | GET | `/salud` | Verificación de funcionamiento | público | - |
 
 **Ejemplo - registrar una falla**
@@ -188,7 +194,7 @@ PF-13 a PF-19 son adicionales). **Resultado: 19 aprobadas, 0 fallidas.**
 | PF-08 | Usuario no autorizado bloqueado sin cambios | RNF-01 | 401 / 403 |
 | PF-09 | Intervención válida e inválidas | RF-10 | 201 / 403 / 422 |
 | PF-10 | Cierre con resultado e historial | RF-11 | 200 / 409 |
-| PF-11 | Consolidado con conteos y filtros por fecha | RF-12 | 200 / 422 |
+| PF-11 | Dashboard con conteos y filtros por fecha | RF-12 | 200 / 422 |
 | PF-12 | Flujo completo reporte → cierre | RF-03 a RF-12 | 2xx |
 | PF-13 a PF-19 | Duplicados, autenticación, verificación, reasignación, visibilidad, fotos, espacios | ver trazabilidad | varios |
 
@@ -203,7 +209,9 @@ Las evidencias (petición, respuesta y código HTTP de cada paso) están en
 [`evidencias/pruebas_api.md`](evidencias/pruebas_api.md). La matriz completa está en
 [`docs/trazabilidad.md`](docs/trazabilidad.md).
 
-> Pendiente con el frontend: evidencia del flujo completo interfaz → API → base de datos.
+**Flujo completo desde la interfaz (PF-12):** guion, resultados observados y capturas en
+[`evidencias/flujo_interfaz.md`](evidencias/flujo_interfaz.md): reporte con foto → evaluación → asignación →
+intervención → finalización → verificación → cierre → dashboard, pasando por interfaz, API y base de datos.
 
 ## 8. Control de versiones
 
@@ -222,5 +230,8 @@ Las evidencias (petición, respuesta y código HTTP de cada paso) están en
 - El backend cubre CA-01 a CA-06 con control de acceso por perfil, validaciones, historial y 19 pruebas.
 - **Limitaciones:** SQLite (suficiente para una sede; cambiar `DATABASE_URL` para otro motor); las fotos se
   guardan en disco local; no hay recuperación de contraseña ni notificaciones (fuera del alcance acordado).
-- **Pendiente:** frontend, capturas de interfaz, prueba del flujo completo desde la interfaz, enlaces de
-  GitHub y confirmación de los supuestos de `docs/requisitos.md` con el cliente.
+- **Interfaz:** probada manualmente en el navegador (flujo completo, validaciones del servidor y vista móvil de 375 px);
+  no tiene pruebas automatizadas, solo el guion documentado.
+- **Evidencias de la interfaz:** 8 capturas del flujo completo en `evidencias/capturas/` (guion en
+  `evidencias/flujo_interfaz.md`).
+- **Pendiente:** enlaces de GitHub y confirmación de los supuestos de `docs/requisitos.md` con el cliente.
