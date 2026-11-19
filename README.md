@@ -226,6 +226,7 @@ intervención → finalización → verificación → cierre → dashboard, pasa
 | [#1](https://github.com/Alexiss039/instalaciones/pull/1) | Backend: API, modelo de datos, pruebas, evidencias y documentación | Brayan Espinosa | Emanuel Ortiz |
 | [#2](https://github.com/Alexiss039/instalaciones/pull/2) | Frontend: interfaz web por perfil | Emanuel Ortiz | Brayan Espinosa |
 | [#3](https://github.com/Alexiss039/instalaciones/pull/3) | Backend: servicio y criterio «dashboard», usuarios de demostración simples, evidencias y capturas | Brayan Espinosa | Emanuel Ortiz |
+| [#4](https://github.com/Alexiss039/instalaciones/pull/4) | Documentación: enlace del repositorio, tabla de PR, aportes por integrante, aprobación del docente y diagramas | Emanuel Ortiz | Brayan Espinosa |
 
 ## 9. Conclusiones y limitaciones
 
