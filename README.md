@@ -22,14 +22,14 @@ y base de datos relacional.
 
 | Integrante | Aporte |
 |---|---|
-| Brayan Espinosa | Backend: modelo de datos, API REST, reglas de negocio, pruebas de API, evidencias y documentación técnica (commits con `alexisbrayan0444@gmail.com`) |
+| Brayan Espinosa | Backend: modelo de datos, API REST, reglas de negocio, pruebas de API, evidencias y documentación técnica (commits con `alexisbrayan0444@gmail.com` y `alexisbrayan039@gmail.com`) |
 | Emanuel Ortiz | Frontend: interfaces por perfil, validaciones en el navegador e integración con la API (commits con `emanuel-2005@outlook.es`) |
 
 ## 2. Descripción del sistema
 
 **Actores:** reportante (docentes y administrativos), personal de mantenimiento y coordinación.
 
-**Alcance aprobado:** registro de fallas con fotografía, evaluación, gestión de duplicados, asignación de
+**Alcance acordado a partir de la entrevista:** registro de fallas con fotografía, evaluación, gestión de duplicados, asignación de
 responsables, registro de intervenciones, cierre con verificación y consulta del dashboard.
 **Fuera de alcance:** repuestos, compras, costos, sensores IoT, contratos, SMS/WhatsApp e integraciones.
 
@@ -44,7 +44,7 @@ modifica lo que le corresponde. Detalle en [`docs/requisitos.md`](docs/requisito
   con las decisiones de diseño, en [`docs/requisitos.md`](docs/requisitos.md).
 - **Requisitos:** 12 funcionales (RF-01 a RF-12), 6 no funcionales y 11 reglas de negocio.
 - **Criterios de aceptación:** CA-01 a CA-06 de la guía, trazados en [`docs/trazabilidad.md`](docs/trazabilidad.md).
-- **Supuestos por confirmar** con el cliente: listados al final de `docs/requisitos.md`.
+- **Supuestos por confirmar** con el cliente: listados al final de [`docs/requisitos.md`](docs/requisitos.md).
 
 ## 4. Arquitectura, diseño de la API y modelo de datos
 
@@ -219,10 +219,10 @@ intervención → finalización → verificación → cierre → dashboard, pasa
 ## 8. Control de versiones
 
 - **Repositorio:** [https://github.com/Alexiss039/instalaciones](https://github.com/Alexiss039/instalaciones).
-- **Flujo:** rama `main` protegida por pull requests; ramas `feature/...` por funcionalidad; commits
-  descriptivos.
-- **Backend:** commits y PR de Brayan Espinosa. **Frontend:** commits y PR de Emanuel Ortiz, revisados de
-  forma cruzada.
+- **Flujo:** `main` se actualiza únicamente mediante pull requests; ramas `feature/...` y `docs/...` por
+  funcionalidad; commits descriptivos.
+- **Backend:** commits y PR de Brayan Espinosa. **Frontend:** commits y PR de Emanuel Ortiz. La revisión de
+  cada PR se indica en la última columna de la tabla.
 
 | PR | Contenido | Autor | Revisor |
 |---|---|---|---|
@@ -230,6 +230,7 @@ intervención → finalización → verificación → cierre → dashboard, pasa
 | [#2](https://github.com/Alexiss039/instalaciones/pull/2) | Frontend: interfaz web por perfil | Emanuel Ortiz | Brayan Espinosa |
 | [#3](https://github.com/Alexiss039/instalaciones/pull/3) | Backend: servicio y criterio «dashboard», usuarios de demostración simples, evidencias y capturas | Brayan Espinosa | Emanuel Ortiz |
 | [#4](https://github.com/Alexiss039/instalaciones/pull/4) | Documentación: enlace del repositorio, tabla de PR, aportes por integrante, aprobación del docente y diagramas | Emanuel Ortiz | Brayan Espinosa |
+| [#5](https://github.com/Alexiss039/instalaciones/pull/5) | Documentación: agrega el PR #4 a la tabla de pull requests | Brayan Espinosa | — |
 | [#6](https://github.com/Alexiss039/instalaciones/pull/6) | Corrección del filtro de fechas por zona horaria y evidencia de la entrevista | Emanuel Ortiz | Revisión solicitada |
 
 ## 9. Conclusiones y limitaciones
