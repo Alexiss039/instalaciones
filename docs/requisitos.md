@@ -4,8 +4,10 @@
 **Cliente:** Juan Carlos Morales Guerra (docente, en representación de la organización)  
 **Método:** cuestionario escrito de 16 preguntas enviado el 11/11/2026 y respondido por el cliente el 18/11/2026.
 
-> **Estado de aprobación:** el docente (cliente) aprobó las respuestas de las 16 preguntas, el alcance y los
-> supuestos marcados como **[Supuesto]** (sección 7).
+> **Estado de aprobación:** las respuestas a las 16 preguntas son textuales del cliente
+> (ver [`../evidencias/entrevista/`](../evidencias/entrevista/)). El alcance y los supuestos marcados como
+> **[Supuesto]** (sección 7) son decisiones del equipo derivadas de esas respuestas y están **pendientes de
+> confirmación** por parte del cliente.
 
 ## 1. Alcance
 
@@ -20,7 +22,7 @@ una sede con varios edificios: aulas, oficinas, laboratorios y zonas comunes.
 | Mantenimiento | Técnicos | Valoran técnicamente si coordinación lo pide, registran intervenciones en lo asignado y finalizan |
 | Coordinación | Responsables de la gestión | Evalúan, asignan y reasignan, verifican cierres y consultan todo |
 
-**Fuera de alcance (confirmado):** repuestos, compras, costos contables, mantenimiento predictivo, sensores
+**Fuera de alcance (según la guía del proyecto):** repuestos, compras, costos contables, mantenimiento predictivo, sensores
 IoT, contratos, SMS/WhatsApp e integración con plataformas institucionales.
 
 ## 2. Registro de la entrevista
@@ -99,7 +101,9 @@ IoT, contratos, SMS/WhatsApp e integración con plataformas institucionales.
 | Como técnico quiero informar que terminé y como coordinador verificarlo | El cierre guarda resultado y solución; consultable por quien corresponda | CA-05 |
 | Como coordinador quiero ver pendientes, en atención y finalizados por fechas | Los conteos del dashboard coinciden con los reportes almacenados | CA-06 |
 
-## 7. Supuestos (aprobados por el cliente)
+## 7. Supuestos (pendientes de confirmación por el cliente)
+
+Se adoptaron para poder avanzar con el diseño. Si el cliente decide otra cosa, se ajustan.
 
 1. Las cuentas de técnicos y coordinación las crea coordinación; los docentes/administrativos pueden auto-registrarse.
 2. Un reporte de prioridad alta o crítica, o con resultado distinto de «resuelto», pasa por verificación de coordinación.

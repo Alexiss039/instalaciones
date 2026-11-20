@@ -22,14 +22,14 @@ y base de datos relacional.
 
 | Integrante | Aporte |
 |---|---|
-| Brayan Espinosa | Backend: modelo de datos, API REST, reglas de negocio, pruebas de API, evidencias y documentación técnica (commits con `alexisbrayan0444@gmail.com`) |
+| Brayan Espinosa | Backend: modelo de datos, API REST, reglas de negocio, pruebas de API, evidencias y documentación técnica (commits con `alexisbrayan0444@gmail.com` y `alexisbrayan039@gmail.com`) |
 | Emanuel Ortiz | Frontend: interfaces por perfil, validaciones en el navegador e integración con la API (commits con `emanuel-2005@outlook.es`) |
 
 ## 2. Descripción del sistema
 
 **Actores:** reportante (docentes y administrativos), personal de mantenimiento y coordinación.
 
-**Alcance aprobado:** registro de fallas con fotografía, evaluación, gestión de duplicados, asignación de
+**Alcance acordado a partir de la entrevista:** registro de fallas con fotografía, evaluación, gestión de duplicados, asignación de
 responsables, registro de intervenciones, cierre con verificación y consulta del dashboard.
 **Fuera de alcance:** repuestos, compras, costos, sensores IoT, contratos, SMS/WhatsApp e integraciones.
 
@@ -39,11 +39,12 @@ modifica lo que le corresponde. Detalle en [`docs/requisitos.md`](docs/requisito
 
 ## 3. Requisitos y alcance
 
-- **Método:** cuestionario de 16 preguntas respondido por el docente (cliente) el 18/11/2026; el registro
-  completo con las decisiones de diseño está en [`docs/requisitos.md`](docs/requisitos.md).
+- **Método:** cuestionario de 16 preguntas respondido por el docente (cliente) el 18/11/2026. Las preguntas y
+  las respuestas textuales están en [`evidencias/entrevista/`](evidencias/entrevista/); el registro completo
+  con las decisiones de diseño, en [`docs/requisitos.md`](docs/requisitos.md).
 - **Requisitos:** 12 funcionales (RF-01 a RF-12), 6 no funcionales y 11 reglas de negocio.
 - **Criterios de aceptación:** CA-01 a CA-06 de la guía, trazados en [`docs/trazabilidad.md`](docs/trazabilidad.md).
-- **Supuestos por confirmar** con el cliente: listados al final de `docs/requisitos.md`.
+- **Supuestos por confirmar** con el cliente: listados al final de [`docs/requisitos.md`](docs/requisitos.md).
 
 ## 4. Arquitectura, diseño de la API y modelo de datos
 
@@ -67,7 +68,7 @@ navegación flotante (detalle en [`docs/diseno.md`](docs/diseno.md)).. Las captu
 **Requisitos:** Python 3.11 o superior y Git.
 
 ```powershell
-git clone <URL-DEL-REPOSITORIO>
+git clone https://github.com/Alexiss039/instalaciones.git
 cd instalaciones
 python -m venv venv
 .\venv\Scripts\Activate.ps1
@@ -78,6 +79,8 @@ En Linux/macOS: `source venv/bin/activate`.
 
 **Variables de entorno (opcional).** Copie `.env.example` como `backend/.env` y ajuste los valores. Sin
 `SECRET_KEY` se genera una clave aleatoria al arrancar (las sesiones se cierran al reiniciar el servidor).
+`ZONA_HORARIA` (por defecto `America/Bogota`) define qué día es «hoy» y los límites de los filtros por fecha;
+las marcas de tiempo se guardan en UTC, así que el resultado no depende de la zona del servidor.
 
 **Base de datos y datos de prueba.** La base SQLite se crea sola al iniciar. Para cargar edificios, espacios
 y una cuenta por perfil (datos ficticios):
@@ -216,10 +219,10 @@ intervención → finalización → verificación → cierre → dashboard, pasa
 ## 8. Control de versiones
 
 - **Repositorio:** [https://github.com/Alexiss039/instalaciones](https://github.com/Alexiss039/instalaciones).
-- **Flujo:** rama `main` protegida por pull requests; ramas `feature/...` por funcionalidad; commits
-  descriptivos.
-- **Backend:** commits y PR de Brayan Espinosa. **Frontend:** commits y PR de Emanuel Ortiz, revisados de
-  forma cruzada.
+- **Flujo:** `main` se actualiza únicamente mediante pull requests; ramas `feature/...` y `docs/...` por
+  funcionalidad; commits descriptivos.
+- **Backend:** commits y PR de Brayan Espinosa. **Frontend:** commits y PR de Emanuel Ortiz. La revisión de
+  cada PR se indica en la última columna de la tabla.
 
 | PR | Contenido | Autor | Revisor |
 |---|---|---|---|
@@ -227,6 +230,8 @@ intervención → finalización → verificación → cierre → dashboard, pasa
 | [#2](https://github.com/Alexiss039/instalaciones/pull/2) | Frontend: interfaz web por perfil | Emanuel Ortiz | Brayan Espinosa |
 | [#3](https://github.com/Alexiss039/instalaciones/pull/3) | Backend: servicio y criterio «dashboard», usuarios de demostración simples, evidencias y capturas | Brayan Espinosa | Emanuel Ortiz |
 | [#4](https://github.com/Alexiss039/instalaciones/pull/4) | Documentación: enlace del repositorio, tabla de PR, aportes por integrante, aprobación del docente y diagramas | Emanuel Ortiz | Brayan Espinosa |
+| [#5](https://github.com/Alexiss039/instalaciones/pull/5) | Documentación: agrega el PR #4 a la tabla de pull requests | Brayan Espinosa | — |
+| [#6](https://github.com/Alexiss039/instalaciones/pull/6) | Corrección del filtro de fechas por zona horaria y evidencia de la entrevista | Emanuel Ortiz | Revisión solicitada |
 
 ## 9. Conclusiones y limitaciones
 
@@ -237,4 +242,6 @@ intervención → finalización → verificación → cierre → dashboard, pasa
   no tiene pruebas automatizadas, solo el guion documentado.
 - **Evidencias de la interfaz:** 8 capturas del flujo completo en `evidencias/capturas/` (guion en
   `evidencias/flujo_interfaz.md`).
-- **Aprobación:** el docente (cliente) aprobó el alcance, los requisitos y los supuestos de `docs/requisitos.md`.
+- **Pendiente de aprobación:** el cliente respondió las 16 preguntas, pero todavía no ha confirmado por
+  escrito el alcance ni los cuatro supuestos de la sección 7 de [`docs/requisitos.md`](docs/requisitos.md),
+  que son decisiones tomadas por el equipo a partir de sus respuestas.

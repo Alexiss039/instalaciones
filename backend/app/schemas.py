@@ -5,6 +5,7 @@ from typing import Annotated
 from pydantic import (BaseModel, ConfigDict, Field, StringConstraints, computed_field,
                       field_validator, model_validator)
 
+from .config import hoy_local
 from .enums import (GRUPO_DE_ESTADO, Cargo, DecisionEvaluacion, EstadoReporte, GrupoEstado,
                     Prioridad, ResultadoCierre, Rol, RolAsignacion, TipoEspacio, TipoFalla)
 
@@ -17,7 +18,7 @@ Password = Annotated[str, StringConstraints(min_length=8, max_length=72)]
 
 
 def _no_futura(v: date) -> date:
-    if v > date.today():
+    if v > hoy_local():
         raise ValueError("La fecha no puede ser futura")
     return v
 

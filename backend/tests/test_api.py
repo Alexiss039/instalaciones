@@ -1,10 +1,8 @@
 """Pruebas funcionales de la API. PF-01 a PF-12 son las mínimas de la guía; PF-13 en adelante, adicionales."""
 import io
 
-from ayudas import (AYER, FINALIZAR, HOY, asignar, crear_reporte, evaluar_aceptar, intervenir, prueba,
-                    reporte_en_atencion)
-
-from datetime import date, timedelta
+from ayudas import (AYER, FINALIZAR, HOY, asignar, crear_reporte, dias, evaluar_aceptar, intervenir,
+                    prueba, reporte_en_atencion)
 
 
 @prueba("PF-01", "Registrar un reporte válido vinculado a un espacio y comprobar que persiste",
@@ -30,7 +28,7 @@ def test_pf02_reporte_invalido(cliente, datos):
     casos = [
         {k: v for k, v in base.items() if k != "descripcion"},                       # falta descripción
         {**base, "descripcion": "corta"},                                           # descripción muy corta
-        {**base, "fecha_inicio_falla": (date.today() + timedelta(days=3)).isoformat()},  # fecha futura
+        {**base, "fecha_inicio_falla": dias(3)},  # fecha futura
         {**base, "fecha_inicio_falla": "no-es-fecha"},                              # fecha malformada
         {**base, "tipo_falla": "inventada"},                                        # valor fuera del catálogo
         {**base, "espacio_id": 99999},                                              # espacio inexistente
@@ -190,7 +188,7 @@ def test_pf11_dashboard(cliente, datos):
     # filtros por fecha
     hoy = cliente.get("/dashboard/resumen", headers=datos.h.coord, params={"desde": HOY, "hasta": HOY}).json()
     assert hoy["total_reportes"] == 3
-    futuro = (date.today() + timedelta(days=5)).isoformat()
+    futuro = dias(5)
     assert cliente.get("/dashboard/resumen", headers=datos.h.coord, params={"desde": futuro}).json()["total_reportes"] == 0
     assert cliente.get("/dashboard/resumen", headers=datos.h.coord,
                        params={"desde": futuro, "hasta": HOY}).status_code == 422
