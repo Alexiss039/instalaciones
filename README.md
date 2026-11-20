@@ -230,6 +230,7 @@ intervención → finalización → verificación → cierre → dashboard, pasa
 | [#2](https://github.com/Alexiss039/instalaciones/pull/2) | Frontend: interfaz web por perfil | Emanuel Ortiz | Brayan Espinosa |
 | [#3](https://github.com/Alexiss039/instalaciones/pull/3) | Backend: servicio y criterio «dashboard», usuarios de demostración simples, evidencias y capturas | Brayan Espinosa | Emanuel Ortiz |
 | [#4](https://github.com/Alexiss039/instalaciones/pull/4) | Documentación: enlace del repositorio, tabla de PR, aportes por integrante, aprobación del docente y diagramas | Emanuel Ortiz | Brayan Espinosa |
+| [#6](https://github.com/Alexiss039/instalaciones/pull/6) | Corrección del filtro de fechas por zona horaria y evidencia de la entrevista | Emanuel Ortiz | Revisión solicitada |
 
 ## 9. Conclusiones y limitaciones
 
