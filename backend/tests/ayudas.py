@@ -1,11 +1,19 @@
 """Funciones auxiliares para armar escenarios en las pruebas (todas usan la API)."""
-from datetime import date, timedelta
+from datetime import timedelta
 
 import pytest
+from app.config import hoy_local
 
 prueba = pytest.mark.prueba
-HOY = date.today().isoformat()
-AYER = (date.today() - timedelta(days=1)).isoformat()
+
+
+def dias(n: int = 0) -> str:
+    """Fecha en la zona de la organización, desplazada n días (negativa = pasado)."""
+    return (hoy_local() + timedelta(days=n)).isoformat()
+
+
+HOY = dias()
+AYER = dias(-1)
 
 
 def crear_reporte(c, datos, quien="doc", espacio=None, **extra):

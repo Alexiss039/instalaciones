@@ -1,9 +1,10 @@
 """Reglas de negocio: transiciones de estado, visibilidad por perfil y consultas."""
-from datetime import date, datetime, time, timedelta
+from datetime import date
 
 from sqlalchemy import or_, select
 from sqlalchemy.orm import Session
 
+from .config import inicio_dia_utc
 from .enums import EstadoReporte as E
 from .enums import Rol
 from .errores import conflicto, no_encontrado, prohibido, regla_negocio
@@ -108,14 +109,18 @@ def construir_detalle(db: Session, reporte: Reporte, usuario: Usuario) -> Report
 
 
 def condiciones_fecha(desde: date | None, hasta: date | None) -> list:
-    """Filtro por fecha de creación del reporte; 'hasta' incluye todo ese día."""
+    """Filtro por fecha de creación del reporte; 'hasta' incluye todo ese día.
+
+    Las fechas son días de la zona de la organización y `creado_en` se guarda en UTC, así que
+    los límites se convierten a UTC antes de comparar.
+    """
     if desde and hasta and desde > hasta:
         raise regla_negocio("La fecha 'desde' no puede ser posterior a 'hasta'")
     condiciones = []
     if desde:
-        condiciones.append(Reporte.creado_en >= datetime.combine(desde, time.min))
+        condiciones.append(Reporte.creado_en >= inicio_dia_utc(desde))
     if hasta:
-        condiciones.append(Reporte.creado_en < datetime.combine(hasta + timedelta(days=1), time.min))
+        condiciones.append(Reporte.creado_en < inicio_dia_utc(hasta, 1))
     return condiciones
 
 

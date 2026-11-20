@@ -39,8 +39,9 @@ modifica lo que le corresponde. Detalle en [`docs/requisitos.md`](docs/requisito
 
 ## 3. Requisitos y alcance
 
-- **Método:** cuestionario de 16 preguntas respondido por el docente (cliente) el 18/11/2026; el registro
-  completo con las decisiones de diseño está en [`docs/requisitos.md`](docs/requisitos.md).
+- **Método:** cuestionario de 16 preguntas respondido por el docente (cliente) el 18/11/2026. Las preguntas y
+  las respuestas textuales están en [`evidencias/entrevista/`](evidencias/entrevista/); el registro completo
+  con las decisiones de diseño, en [`docs/requisitos.md`](docs/requisitos.md).
 - **Requisitos:** 12 funcionales (RF-01 a RF-12), 6 no funcionales y 11 reglas de negocio.
 - **Criterios de aceptación:** CA-01 a CA-06 de la guía, trazados en [`docs/trazabilidad.md`](docs/trazabilidad.md).
 - **Supuestos por confirmar** con el cliente: listados al final de `docs/requisitos.md`.
@@ -67,7 +68,7 @@ navegación flotante (detalle en [`docs/diseno.md`](docs/diseno.md)).. Las captu
 **Requisitos:** Python 3.11 o superior y Git.
 
 ```powershell
-git clone <URL-DEL-REPOSITORIO>
+git clone https://github.com/Alexiss039/instalaciones.git
 cd instalaciones
 python -m venv venv
 .\venv\Scripts\Activate.ps1
@@ -78,6 +79,8 @@ En Linux/macOS: `source venv/bin/activate`.
 
 **Variables de entorno (opcional).** Copie `.env.example` como `backend/.env` y ajuste los valores. Sin
 `SECRET_KEY` se genera una clave aleatoria al arrancar (las sesiones se cierran al reiniciar el servidor).
+`ZONA_HORARIA` (por defecto `America/Bogota`) define qué día es «hoy» y los límites de los filtros por fecha;
+las marcas de tiempo se guardan en UTC, así que el resultado no depende de la zona del servidor.
 
 **Base de datos y datos de prueba.** La base SQLite se crea sola al iniciar. Para cargar edificios, espacios
 y una cuenta por perfil (datos ficticios):
@@ -237,4 +240,6 @@ intervención → finalización → verificación → cierre → dashboard, pasa
   no tiene pruebas automatizadas, solo el guion documentado.
 - **Evidencias de la interfaz:** 8 capturas del flujo completo en `evidencias/capturas/` (guion en
   `evidencias/flujo_interfaz.md`).
-- **Aprobación:** el docente (cliente) aprobó el alcance, los requisitos y los supuestos de `docs/requisitos.md`.
+- **Pendiente de aprobación:** el cliente respondió las 16 preguntas, pero todavía no ha confirmado por
+  escrito el alcance ni los cuatro supuestos de la sección 7 de [`docs/requisitos.md`](docs/requisitos.md),
+  que son decisiones tomadas por el equipo a partir de sus respuestas.
